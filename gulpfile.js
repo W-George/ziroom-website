@@ -50,7 +50,7 @@ gulp.task('server', () => {
   return gulp.src('./dev')
     .pipe(server({
       host: 'localhost',
-      port: 7000,
+      port: 9000,
       livereture:true,
       middleware:[
         proxy("/api",{
@@ -73,6 +73,7 @@ gulp.task('copyicons', () => {
     .pipe(gulp.dest('./dev/iconfonts'))
 })
 
+
 // copy libs
 gulp.task('copylibs', () => {
   return gulp.src('./src/libs/**/*')
@@ -91,6 +92,6 @@ gulp.task('watch', () => {
 })
 
 // default task
-gulp.task('default', ['packscss', 'packjs', 'copyhtml','copylibs', 'copyicons', 'server', 'watch'], () => {
+gulp.task('default', ['packscss', 'packjs','copyhtml','copylibs', 'copyicons', 'server', 'watch'], () => {
   console.log('all works!')
 })

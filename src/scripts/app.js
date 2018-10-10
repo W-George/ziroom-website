@@ -1,3 +1,3 @@
-const homeController = require("./controllers/home");
+import homeController from"./controllers/home";
 
-homeController.rendel();
+homeController.render();
