@@ -1,16 +1,16 @@
 {
-  "name": "First-Cooperation-Project-",
+  "name": "lizi-website",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:W-George/First-Cooperation-Project-.git",
-  "author": "zhsun <1056120901@qq.com>",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "gulp-webserver": "^0.9.1",
     "http-proxy-middleware": "^0.19.0",
+    "json-server": "^0.14.0",
     "node-sass": "^4.9.3",
+    "string-loader": "^0.0.1",
     "webpack-stream": "^5.1.1"
   },
   "scripts": {
