@@ -53,8 +53,8 @@ gulp.task('server', () => {
       port: 9000,
       livereture:true,
       middleware:[
-        proxy("/api",{
-          target: 'http://localhost:3000',
+        proxy("/h5",{
+          target: 'https://mtop.damai.cn',
           changeOrigin: true,
         })
       ]

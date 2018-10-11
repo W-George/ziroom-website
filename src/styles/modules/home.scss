@@ -15,18 +15,66 @@
     url('/iconfonts/iconfonts1/iconfont.ttf') format('truetype'),
     url('/iconfonts/iconfonts1/iconfont.svg#iconfont') format('svg');
 }
-
+body{
+    background: #f9f9f9;
+}
 #root{
     height: 100%;
     background: #fff;
+}
+.homepage{
+    height: 100%;
     header{
-        background: #f5f5f5;
-        height: .5rem;
+        height: .44rem;
         @include flexbox();
         @include align-items(center);
         >div:first-child{
-            margin: 0 .18rem;
-            font-size: .16rem;
+            width: .44rem;
+            line-height: .44rem;
+            text-align: center;
+        }
+        >div:nth-child(2){
+            width: 2.8rem;
+            height: .32rem;
+            line-height: .32rem;
+            color: #ddd;
+            padding-left: .18rem;
+            @include border(1px, #ddd, solid, 4px);
+            >i{
+                margin-right: .09rem;
+            }
+        }
+        >i{
+            margin-left: .12rem;
+            font-size: .24rem;
+        }
+    }
+    main{
+        @include flex();
+        width: 100%;
+        .banner{
+            height: 1.26rem;
+        }
+        >nav{
+            padding: .18rem 0 .09rem;
+            ul{
+                @include flexbox();
+                @include flex-wrap(wrap);
+                li{
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include align-items(center);
+                    width: 25%;
+                    margin-bottom: .15rem;
+                    img{
+                        width: .5rem;
+                        height: .32rem;
+                    }
+                    span{
+                        font-size: .12rem;
+                    }
+                }
+            }
         }
     }
 }

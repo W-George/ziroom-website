@@ -106,7 +106,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _con
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/home.html */ \"./src/scripts/views/home.html\");\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_home_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\"#root\").html(_views_home_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/scripts/controllers/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/home.html */ \"./src/scripts/views/home.html\");\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_home_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _views_home_content_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/home-content.html */ \"./src/scripts/views/home-content.html\");\n/* harmony import */ var _views_home_content_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_views_home_content_html__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _models_home_content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/home-content */ \"./src/scripts/models/home-content.js\");\n\n\n\n\nvar render = function render() {\n  $(\"#root\").html(_views_home_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n  _models_home_content__WEBPACK_IMPORTED_MODULE_2__[\"default\"].getBanner();\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/scripts/controllers/home.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/models/home-content.js":
+/*!********************************************!*\
+  !*** ./src/scripts/models/home-content.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar getBanner = function getBanner() {\n  var t = new Date().getTime();\n  console.log(t);\n  return $.ajax({\n    url: '/h5/mtop.damai.wireless.configure.msite.list/1.0/?jsv=2.4.16&appKey=12574478&t=1539265353658&sign=0b0f5d9115392653549288774ee220&type=originaljson&dataType=json&v=1.0&H5Request=true&AntiCreep=true&AntiFlood=true&api=mtop.damai.wireless.configure.msite.list&data=%7B%22cityId%22%3A%220%22%2C%22dmChannel%22%3A%22b%40damai_h5%22%7D',\n    success: function success(result) {\n      console.log(result);\n    }\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  getBanner: getBanner\n});\n\n//# sourceURL=webpack:///./src/scripts/models/home-content.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/views/home-content.html":
+/*!*********************************************!*\
+  !*** ./src/scripts/views/home-content.html ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"banner\\\"></div><nav>    <ul>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>        <li>            <img src=\\\"https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png\\\">            <span>演唱会</span>        </li>    </ul></nav>\"\n\n//# sourceURL=webpack:///./src/scripts/views/home-content.html?");
 
 /***/ }),
 
@@ -117,7 +140,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<header>    <div>        <i class=\\\"yo-ico\\\">&#xe65e;</i>        <span>全国</span>    </div></header>\"\n\n//# sourceURL=webpack:///./src/scripts/views/home.html?");
+eval("module.exports = \"<div class=\\\"homepage\\\">    <header>        <div>            <span>北京</span>        </div>        <div>            <span>输入您想住的区域或小区</span>        </div>        <i class=\\\"yo-ico\\\">&#xe62f;</i>    </header>    <main>    </main></div>\"\n\n//# sourceURL=webpack:///./src/scripts/views/home.html?");
 
 /***/ })
 
