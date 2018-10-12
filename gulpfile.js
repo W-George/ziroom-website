@@ -18,7 +18,7 @@ gulp.task('packjs', () => {
         rules: [
           {
             test: /\.html$/,
-            use: [ 'string-loader' ]
+            use: ['string-loader']
           },
           {
             test: /\.m?js$/,
@@ -30,7 +30,7 @@ gulp.task('packjs', () => {
                 plugins: ['@babel/plugin-transform-runtime']
               }
             }
-          }     
+          }
         ]
       }
     }))
@@ -51,9 +51,9 @@ gulp.task('server', () => {
     .pipe(server({
       host: 'localhost',
       port: 9000,
-      livereture:true,
-      middleware:[
-        proxy("/h5",{
+      livereture: true,
+      middleware: [
+        proxy("/h5", {
           target: 'https://mtop.damai.cn',
           changeOrigin: true,
         })
@@ -80,6 +80,12 @@ gulp.task('copylibs', () => {
     .pipe(gulp.dest('./dev/libs'))
 })
 
+// copy images
+gulp.task('copyimages', () => {
+  return gulp.src('./src/images/**/*')
+    .pipe(gulp.dest('./dev/images'))
+})
+
 
 
 // 文件修改 watch
@@ -89,9 +95,10 @@ gulp.task('watch', () => {
   gulp.watch('./src/scripts/**/*', ['packjs'])
   gulp.watch('./src/libs/**/*', ['copylibs'])
   gulp.watch('./src/mock/**/*', ['copymock'])
+  gulp.watch('./src/images/**/*', ['copyimages'])
 })
 
 // default task
-gulp.task('default', ['packscss', 'packjs','copyhtml','copylibs', 'copyicons', 'server', 'watch'], () => {
+gulp.task('default', ['packscss', 'packjs', 'copyhtml', 'copylibs', 'copyicons', 'server', 'watch', 'copyimages'], () => {
   console.log('all works!')
 })
