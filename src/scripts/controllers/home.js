@@ -1,11 +1,11 @@
 import homeTpl from '../views/home.html';
-import homeContentTpl from '../views/home-content.html';
-import homeContentModel from '../models/home-content';
+import homeContentTpl from '../views/home.html';
+// import homeContentModel from '../models/home-content';
 
 
 const render = () => {
     $("#root").html(homeTpl);
-    homeContentModel.getBanner();
+    // homeContentModel.getBanner();
 }
 
 export default {
