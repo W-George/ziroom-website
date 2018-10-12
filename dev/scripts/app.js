@@ -129,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div id=\\\"main\\\">    dmekjfrnmjfk</div>\"\n\n//# sourceURL=webpack:///./src/scripts/views/detail.html?");
+eval("module.exports = \"<div id=\\\"main\\\">    <div class=\\\"ad\\\">            </div></div>\"\n\n//# sourceURL=webpack:///./src/scripts/views/detail.html?");
 
 /***/ }),
 
@@ -140,7 +140,7 @@ eval("module.exports = \"<div id=\\\"main\\\">    dmekjfrnmjfk</div>\"\n\n//# so
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div class=\\\"homepage\\\">    <header>        <div>            <span>北京</span>        </div>        <div>            <span>输入您想住的区域或小区</span>        </div>        <i class=\\\"yo-ico\\\">&#xe62f;</i>    </header>    <main>    </main></div>\"\n\n//# sourceURL=webpack:///./src/scripts/views/home.html?");
+eval("module.exports = \"<div class=\\\"homepage\\\">    <header>        <div>            <span>北京</span>        </div>        <div>            <span>输入您想住的区域或小区</span>        </div>        <i class=\\\"yo-ico\\\">&#xe62f;</i>    </header>    <main>        <div class=\\\"banner\\\">        </div>        <a class=\\\"downClient\\\">            <span></span>            下载自如APP,立即签约好房源        </a>        <div class=\\\"zryjbox\\\">        </div>        <div class=\\\"zrzzbox\\\">        </div>        <div class=\\\"ziruyubox\\\">        </div>        <div class=\\\"zrmsbox\\\">        </div>        <div class=\\\"ziruyibox\\\">        </div>        <div class=\\\"zrfwbox\\\">        </div>        <div class=\\\"logo\\\">            <img src=\\\"//static8.ziroom.com/phoenix/msite/2016/img/logo.png\\\">        </div>    </main>    <footer>        <div class=\\\"down\\\">            <a>                <span></span>                下载自如APP,立即签约好房源            </a>        </div>        <div class=\\\"subnav1\\\">            <span>电脑版</span>            <span class=\\\"borderleft\\\">触屏版</span>            <span class=\\\"borderleft\\\">客户端</span>        </div>        <div class=\\\"subnav2\\\">            <span>首页</span>            <span class=\\\"borderleft\\\">自如找房</span>        </div>        <p>Copyright©2017 ziroom.com</p>    </footer></div>\"\n\n//# sourceURL=webpack:///./src/scripts/views/home.html?");
 
 /***/ })
 

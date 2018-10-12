@@ -20,10 +20,10 @@ body{
 }
 #root{
     height: 100%;
-    background: #fff;
 }
 .homepage{
     height: 100%;
+    overflow-y: scroll;
     header{
         height: .44rem;
         @include flexbox();
@@ -52,29 +52,94 @@ body{
     main{
         @include flex();
         width: 100%;
+        background: #fff;
         .banner{
-            height: 1.26rem;
+            height: 2.05rem;
         }
-        >nav{
-            padding: .18rem 0 .09rem;
-            ul{
-                @include flexbox();
-                @include flex-wrap(wrap);
-                li{
-                    @include flexbox();
-                    @include flex-direction(column);
-                    @include align-items(center);
-                    width: 25%;
-                    margin-bottom: .15rem;
-                    img{
-                        width: .5rem;
-                        height: .32rem;
-                    }
-                    span{
-                        font-size: .12rem;
-                    }
+        .downClient{
+            display: block;
+            height: .48rem;
+            line-height: .48rem;
+            padding-left: .12rem;
+            color: #444;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                width: .32rem;
+                height: .32rem;
+                background: url('../images/zrLogoSmall.png')no-repeat center;
+                background-size: cover;
+                margin-right: .1rem;
+            }
+        }
+        .logo{
+            height: .79rem;
+            padding: .25rem 0 .25rem;
+            @include flexbox();
+            @include justify-content(center);
+            img{
+                width: .85rem;
+                height: .25rem;
+            }
+        }
+    }
+    footer{
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        .down{
+            @include flexbox();
+            @include justify-content(center);
+            width: 3.4rem;
+            height: .64rem;
+            background: #fff;
+            @include border(1px, #ccc, solid, 4px);
+            margin-top: .12rem;
+            >a{
+                line-height: .64rem;
+                padding-left: .12rem;
+                color: #444;
+                font-size: .12rem;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: .32rem;
+                    height: .32rem;
+                    background: url('../images/zrLogoSmall.png')no-repeat center;
+                    background-size: cover;
+                    margin-right: .1rem;
                 }
             }
+        }
+        .subnav1,.subnav2{
+            @include flexbox();
+            @include justify-content(space-between);
+            width: 2.04rem;
+            height: .16rem;
+            font-size: .12rem;
+            color: #999;
+            margin: .24rem .67rem .14rem;
+            .borderleft{
+                @include border(0 0 0 1px,#eee,solid);
+            }
+            span{
+                width: 33.3%;
+                text-align: center;
+            }
+        }
+        .subnav2{
+            span{
+                width: 50%;
+            }
+        }
+        >p{
+            width: 3.4rem;
+            height: .36rem;
+            line-height: .36rem;
+            color: #ccc;
+            font-size: .13rem;
+            text-align: center;
+            @include border(1px 0 0 0,#eee,solid);
         }
     }
 }
