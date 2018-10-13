@@ -53,8 +53,9 @@ gulp.task('server', () => {
       port: 9000,
       livereture: true,
       middleware: [
-        proxy("/h5", {
-          target: 'https://mtop.damai.cn',
+        // http://m.ziroom.com/v7/room/detail.json?city_code=110000&id=60793779
+        proxy("/v7", {
+          target: 'http://m.ziroom.com',
           changeOrigin: true,
         })
       ]
