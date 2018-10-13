@@ -1,3 +1,5 @@
 import homeController from"./controllers/home";
 
-homeController.render();
+import ziruServer from './controllers/ziru-server';
+
+ziruServer.render();
