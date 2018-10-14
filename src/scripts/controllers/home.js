@@ -21,8 +21,7 @@ const render = () => {
 // 动态渲染数据
 const renderData = async () => {
     let result = await homeContentModel.getData();
-    let data = JSON.parse(result);
-    console.log(data);
+    let data = JSON.parse(result).data;
     let template = Handlebars.compile(homeContentTpl);
     let html = template({ data });
     $('.contents').html(html);
