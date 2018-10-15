@@ -2,10 +2,11 @@
 
 @import './modules/home.scss';
 
-@import './modules/detail.scss';
-
 //自如服务
 @import './modules/ziru-server.scss';
 
 // 详情页
-@import './modules/detail.scss'
+@import './modules/detail.scss';
+
+//维修
+@import './modules/repairs.scss'
