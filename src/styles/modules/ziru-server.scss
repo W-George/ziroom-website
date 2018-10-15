@@ -1,5 +1,6 @@
 #root{
     overflow-y: scroll;
+    overflow-x: scroll;
     .ziruServer{
         background: #fff;      
         header{
@@ -22,9 +23,10 @@
             height: 2.05rem;
         }
         main{
-            ul{
+            >ul{
                 font-size: .12rem;
-                li{
+                overflow-x: scroll;
+                >li{
                     padding:.24rem  .18rem;
                     @include border(0 0 1px 0);   
                     position: relative;              
@@ -45,7 +47,7 @@
                     p{
                         color: #bebebe;
                     }
-                    div{
+                    >div{
                         margin-top: .24rem;
                         @include flexbox();
                         @include justify-content(space-between);
@@ -71,55 +73,43 @@
                         }
                     }
                     &:nth-child(4){
-                        >div{
-                            width: 1200px;
-                            ul{                
-                                @include flexbox();
-                                @include flex-wrap(nowarp);
-                                @include justify-content(space-around);
-                                overflow-x: scroll;
-                                li{
-                                    width: 3.4rem;
-                                    height: 2.26rem;
-                                    margin-right: .05rem; 
-                                    position: relative;
-                                    div{
-                                        width: 1.76rem;
-                                        height: .53rem;
-                                        position: absolute;
-                                        right:.20rem;
-                                        bottom: .20rem;
-                                        color: #fff;
-                                        font-size: .21rem;
-                                        text-align: right;
-                                        margin: 0;
-                                        p{
-                                            color: #fff;
-                                            width: 100%;
-                                            margin-bottom: .05rem;
-                                        }
-                                        h3{
-                                            font-weight: normal;
-                                            font-size: .13rem;
-                                            width: 100%;
-                                        }
-                                    }  
-
-                                }
-                                li:nth-child(1){
-                                    background: url(https://pic.ziroom.com/static/upload/cms/2017/05/b96983a8841aacbe164db6e8e186af74.png);  
-                                    background-size: cover;               
-                                }
-                                li:nth-child(2){
-                                    background: url(https://pic.ziroom.com/static/upload/cms/2017/05/5210fc2fdaba375ef27a92114cc64796.png);
-                                    background-size: cover;                 
-                                }
-                                li:nth-child(3){
-                                    background: url(https://pic.ziroom.com/static/upload/cms/2017/03/38f0d6690398d44409f313960739a35e.png);
-                                    background-size: cover;                 
-                                }
-                            }
+                        @include border(0 0 0 0)
+                    }
+                }
+            }
+            .bottomPho{
+                padding:.24rem  .18rem;           
+                ul{  
+                    overflow-x: scroll;
+                    @include flexbox();      
+                    li{                 
+                        margin-right: .05rem; 
+                        position: relative;
+                        img{
+                            width: 3.4rem;
+                            height: 2.26rem;
                         }
+                        div{
+                            width: 1.76rem;
+                            height: .53rem;
+                            position: absolute;
+                            right:.20rem;
+                            bottom: .20rem;
+                            color: #fff;
+                            font-size: .21rem;
+                            text-align: right;
+                            margin: 0;
+                            p{
+                                color: #fff;
+                                width: 100%;
+                                margin-bottom: .05rem;
+                            }
+                            h3{
+                                font-weight: normal;
+                                font-size: .13rem;
+                                width: 100%;
+                            }
+                        }  
                     }
                 }
             }

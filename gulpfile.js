@@ -53,9 +53,12 @@ gulp.task('server', () => {
       port: 9000,
       livereture: true,
       middleware: [
-        proxy("/h5", {
-          target: 'https://mtop.damai.cn',
+        proxy("/api", {
+          target: 'http://m.ziroom.com',
           changeOrigin: true,
+          pathRewrite:{
+            '^/api':''
+          }
         })
       ]
     }))

@@ -10,3 +10,4 @@ router.init();
     首页路由：#home,homeController.render
 */
 router.route('#home',homeController.render);
+router.route('#ziruServer',ziruServer.render);
