@@ -1,0 +1,122 @@
+#root{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    .ziruServer{
+        background: #fff;      
+        header{
+            height: .44rem;
+            @include flexbox();
+            line-height: .44rem;
+            color: rgb(144, 144, 144);
+            font-size: .14rem; 
+            @include justify-content(space-between);
+            text-align: center;
+            span{                           
+                width: .44rem;          
+            }
+            i{
+                width: .44rem;
+                font-size: .24rem;
+            }
+        }
+        .banner{
+            height: 2.05rem;
+            img{
+                height: 2.05rem;
+                width: 100%;
+            }
+        }
+        main{
+            >ul{
+                font-size: .12rem;
+                overflow-x: scroll;
+                >li{
+                    padding:.24rem  .18rem;
+                    @include border(0 0 1px 0);   
+                    position: relative;              
+                    .title{
+                        font-weight: normal;
+                        font-size: .18rem;
+                        line-height: .28rem;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: .29rem;
+                            left: 0;
+                            width: .06rem;
+                            height: .15rem;
+                            background: #FFCA4D;
+                        }
+                    }
+                    p{
+                        color: #bebebe;
+                    }
+                    >div{
+                        margin-top: .24rem;
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        @include flex-wrap(wrap);
+                        img{
+                            width: 1.09rem;
+                            height: 1.32rem;
+                        }
+                    }
+                    &:nth-child(2){
+                        div{
+                            img{
+                                height: 1.09rem;
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        div{
+                            img{
+                                width: 1.66rem;
+                                height: .76rem;
+                            }
+                        }
+                    }
+                    &:nth-child(4){
+                        @include border(0 0 0 0)
+                    }
+                }
+            }
+            .bottomPho{
+                padding:.24rem  .18rem;           
+                ul{  
+                    overflow-x: scroll;
+                    @include flexbox();      
+                    li{                 
+                        margin-right: .05rem; 
+                        position: relative;
+                        img{
+                            width: 3.4rem;
+                            height: 2.26rem;
+                        }
+                        div{
+                            width: 1.76rem;
+                            height: .53rem;
+                            position: absolute;
+                            right:.20rem;
+                            bottom: .20rem;
+                            color: #fff;
+                            font-size: .21rem;
+                            text-align: right;
+                            margin: 0;
+                            p{
+                                color: #fff;
+                                width: 100%;
+                                margin-bottom: .05rem;
+                            }
+                            h3{
+                                font-weight: normal;
+                                font-size: .13rem;
+                                width: 100%;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }  
+}
