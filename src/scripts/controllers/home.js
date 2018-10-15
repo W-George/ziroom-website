@@ -4,6 +4,7 @@ import homeContentModel from '../models/home-content';
 
 
 const render = () => {
+    // 渲染首页
     $("#root").html(homeTpl);
     // homeContentModel.getBanner();
     
@@ -14,9 +15,17 @@ const render = () => {
         pagination: {
             el: '.swiper-pagination',
         },
-    })
-    // 动态渲染数据
-    homeContentModel.getBanner();
+    });
+    renderData();
+}
+
+// 动态渲染数据
+const renderData = async () => {
+    let result = await homeContentModel.getData();
+    let data = JSON.parse(result).data;
+    let template = Handlebars.compile(homeContentTpl);
+    let html = template({ data });
+    $('.contents').html(html);
 }
 
 export default {
