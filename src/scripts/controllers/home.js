@@ -6,6 +6,7 @@ import homeContentModel from '../models/home-content';
 const render = () => {
     // 渲染首页
     $("#root").html(homeTpl);
+    
     // 首页轮播图
     let mySwiper = new Swiper('.swiper-container', {
         autoplay: true,//可选选项，自动滑动

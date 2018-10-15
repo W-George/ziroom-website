@@ -1,0 +1,190 @@
+<div id="main">
+    <div class="back">
+
+            <!--轮播，图片栏 -->
+            <div class="ad">
+                <div class="back-pre">
+                    <img src="../../images/back-pre.jpg">
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {{#each list.space}}
+                        <div class="swiper-slide">
+                            {{#each photos_min}}
+                            <img src="{{this}}"> 
+                            {{/each}}
+                        </div>
+                        {{/each}}
+
+                    </div>
+                </div>
+                <div class="swiper-name">
+                    {{#each list.space}}
+                    <span>{{name}}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+            <!-- 价钱位置等基本情况  -->
+            <div class="introduc pd36 pdt48 bor2px">
+                <div class="price-wrapper">
+                    <span>￥</span>
+                    <div class="pri">
+                        <!-- {{#each this.price}}
+                    {{this}}
+                <span style="background:url(http:{{list.price}})"></span>
+                {{/each}} -->
+
+                        {{#each list.priceArr}}
+                            <span class="pri-bgc" style="background-image: url({{this.bgc}}); background-position: {{this.pos}}, center"></span>
+                        {{/each}}
+
+                    </div>
+                    <span>{{list.price_unit}}({{list.price_desc}})</span>
+                    <span class="pay-status">付款方式</span>
+                </div>
+                <p class="house-name">{{list.name}}</p>
+                <div class="tags bor2px">
+                    {{#each list.tags}}
+                    <span>{{title}}</span>
+                    {{/each}}
+                </div>
+                <div class="house-tag bor2px">
+                    <span>{{list.area}}m</span>
+                    <span>{{list.bedroom}}室{{parlor}}厅</span>
+                    <span>{{list.floor}}/{{list.floor_total}}层</span>
+                    <span>{{list.face}}</span>
+                </div>
+                <div class="distance-dec">
+                    <i></i>
+                    <span>{{list.subway_primary}}</span>
+                </div>
+            </div>
+
+            <!-- 房源介绍 -->
+            <div class="house-wrapper pd36 bor2px">
+                <p class="room-mode">房源介绍</p>
+                <p>{{list.introduction}}</p>
+            </div>
+            <!--户型配套 -->
+            <div class="housetype pd36">
+                <p class="room-mode">户型配套</p>
+                <div class="housetype-hx" style="background-image:url({{list.hx_photos_big}})">
+                </div>
+            </div>
+            <!-- 配置 -->
+            <div class="config-wrapper bor2px pd36">
+                <div class="tab-wrapper bor2px">
+                    {{#each list.space}}
+                    <span>{{name}}</span>
+                    {{/each}}
+                </div>
+                <div class="tab-title">
+                    <span>面积 · {{list.area}}</span>
+                    <span>朝向 · {{list.face}}</span>
+                </div>
+                <div class="tab-views">
+                    {{#each list.space}}
+
+                    <div class="config-icons">
+                        {{#each this}}
+                            <!-- {{this}} -->
+                        <p>{{this.config}}</p>
+                        {{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            <!-- 房间信息 -->
+            <div class="romeinfo-wrapper pd36">
+                <p class="room-mode">房间信息</p>
+                <ul>
+                    {{#each list.roommates}}
+                    <li class="bor2px">
+                        <span>{{title}}</span>
+                        <span>{{status_text}}</span>
+                        <span>{{roommate_gender}}</span>
+                        <span>{{roommate_horoscope}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <!-- 服务介绍 -->
+            <div class="service-wrapper pd36 bor2px">
+                <div class="service-title tit">
+                    <p class="room-mode">服务介绍</p>
+                    <div class="service-more more">
+                        <span>查看全部</span>
+                        <i></i>
+                    </div>
+                </div>
+                <ul>
+                    {{#each list.services.detail}}
+                    <li>
+                        <img src="{{icon}}">
+                        <span>{{title}} ·</span>
+                        <span>{{sub_title}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <!-- 周边及交通 -->
+            <div class="traffic-wrapper bor2px">
+                <div class="traffic-title tit pd36">
+                    <p class="room-mode">周边及交通</p>
+                    <div class="more">
+                        <span>查看介绍</span>
+                        <i></i>
+                    </div>
+                </div>
+                <img src="http://api.map.baidu.com/staticimage/v2?ak=CB9b776692623d30a148b5c5dc2b75a6&mcode=666666&center=116.319276,40.063329&width=800&height=360&zoom=18&markers=116.319276,40.063329&markerStyles=-1,http://api.map.baidu.com/images/marker_red.png,-1,23,25">
+                <ul class="traffic-around pd36">
+                    {{#each list.resblock.subway}}
+                    <li>· {{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <!-- 您的管家 -->
+            <div class="housekeeper-wrapper pd36 bor2px">
+                <p class="room-mode">您的管家</p>
+                <div class='housekeeper-msg'>
+                    <div class='housekeeper-img'>
+                        <img src="http://pic.ziroom.com/steward_images/60003152.png">                            
+                    </div>
+                    <span>仇艺诺</span>
+                    <a href="##">联系管家</a>
+                </div>
+                <p>我是自如管家，服务上百位自如客并与他们成为朋友，选择自如选择我，您就选择了舒心选择了安心！</p>
+            </div>
+            <!-- 常见问题 -->
+            <div class="problem-wrapper pd36 bor2px">
+                <p class="room-mode">常见问题</p>
+                <ul>
+                    {{#each list.questions.content}}
+                    <li>
+                        <p>{{title}}</p>
+                        <a href="{{link}}">查看</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <footer>
+                    <div class="down">
+                        <a>
+                            <span></span>
+                            下载自如APP,立即签约好房源
+                        </a>
+                    </div>
+                    <div class="subnav1">
+                        <span>电脑版</span>
+                        <span class="borderleft">触屏版</span>
+                        <span class="borderleft">客户端</span>
+                    </div>
+                    <div class="subnav2">
+                        <span>首页</span>
+                        <span class="borderleft">自如找房</span>
+                    </div>
+                    <p>Copyright©2017 ziroom.com</p>
+                </footer>
+    
+</div>
