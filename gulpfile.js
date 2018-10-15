@@ -57,7 +57,8 @@ gulp.task('server', () => {
         proxy("/v7", {
           target: 'http://m.ziroom.com',
           changeOrigin: true,
-        })
+        }),
+       
       ]
     }))
 })

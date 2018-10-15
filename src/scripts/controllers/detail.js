@@ -7,6 +7,7 @@ var c=0;
 const render = async () => {
     let result = await detailModel.list()
     let list = result.data
+    console.log(list)
     for (let i of list.price[1]) {
         list['priceArr'] = list.priceArr || [];
         list.priceArr.push({
