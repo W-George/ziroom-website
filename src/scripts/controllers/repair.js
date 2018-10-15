@@ -4,8 +4,6 @@ const render = () => {
     $("#root").html(repairTpl);
 }
 
-
-
 export default {
     render
 }
