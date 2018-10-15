@@ -15,7 +15,6 @@ const render = () => {
         },
     });
     renderData();
-
 }
 
 // 动态渲染数据
