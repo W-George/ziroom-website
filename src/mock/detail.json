@@ -1,0 +1,650 @@
+{
+	"status": "success",
+	"error_code": 0,
+	"error_message": "",
+	"data": {
+		"id": "60793779",
+		"house_id": "60127970",
+		"code": "BJZRGY0817133090_03",
+		"house_code": "BJZRGY0817133090",
+		"city_code": "110000",
+		"is_reserve": "0",
+		"reserve_message": "",
+		"is_newsign": 1,
+		"sign_date": 0,
+		"is_duanzu": 0,
+		"status": "ycz",
+		"notice_word": "",
+		"is_new": "0",
+		"house_type": "1",
+		"ziroom_version_id": 1008,
+		"version_name": "友家4.0",
+		"index_no": "03",
+		"price": [
+			"//static8.ziroom.com/phoenix/pc/images/price/pf_44_444/fea537d16d1009422907283980397197.png",
+			[
+				3,
+				7,
+				7,
+				8
+			]
+		],
+		"price_unit": "/月",
+		"price_desc": "季付价",
+		"photos_min": [
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_380_285_Q80.jpg",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_380_285_Q80.jpg",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_380_285_Q80.jpg"
+		],
+		"photos_min_webp": [
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_380_285_Q80.webp",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_380_285_Q80.webp",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_380_285_Q80.webp"
+		],
+		"photos_big": [
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_800_600_Q100.jpg",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_800_600_Q100.jpg",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_800_600_Q100.jpg"
+		],
+		"photos_big_webp": [
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_800_600_Q100.webp",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_800_600_Q100.webp",
+			"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_800_600_Q100.webp"
+		],
+		"hx_photos_min": [
+			"//img.ziroom.com/pic/house_images/g2/M00/99/B9/ChAFD1n3OmmAK4PZAAG2Uhf3c-s926.jpg_C_380_285_Q80.jpg"
+		],
+		"hx_photos_min_webp": [
+			"//img.ziroom.com/pic/house_images/g2/M00/99/B9/ChAFD1n3OmmAK4PZAAG2Uhf3c-s926.jpg_C_380_285_Q80.webp"
+		],
+		"hx_photos_big": [
+			"//img.ziroom.com/pic/house_images/g2/M00/99/B9/ChAFD1n3OmmAK4PZAAG2Uhf3c-s926.jpg_C_800_600_Q100.jpg"
+		],
+		"hx_photos_big_webp": [
+			"//img.ziroom.com/pic/house_images/g2/M00/99/B9/ChAFD1n3OmmAK4PZAAG2Uhf3c-s926.jpg_C_800_600_Q100.webp"
+		],
+		"air_photos_min": [],
+		"air_photos_min_webp": [],
+		"air_photos_big": [],
+		"air_photos_big_webp": [],
+		"area": "13.8",
+		"face": "北",
+		"bedroom": 3,
+		"parlor": 1,
+		"floor": "2",
+		"floor_total": "10",
+		"district_code": "23008618",
+		"district_name": "海淀",
+		"bizcircle_code": "611100314",
+		"bizcircle_name": "西二旗",
+		"will_unrent_date": "",
+		"tags": [
+			{
+				"title": "木棉4.0"
+			},
+			{
+				"title": "智能锁"
+			},
+			{
+				"title": "离地铁近"
+			}
+		],
+		"introduction": "博雅德园，朝北正规次卧，温馨舒适，格局方正，拥有自己的独立空间！交通方便，配套，适合居住，欢迎来体验。",
+		"actually_complete_date": "2017-10-31 14:11:00",
+		"activity_marks": [],
+		"property_marks": [],
+		"resblock": {
+			"id": "1111027376239",
+			"name": "博雅德园",
+			"lng": 116.319276,
+			"lat": 40.063329,
+			"build_year": "2005",
+			"build_type": "板楼",
+			"greening_ratio": "30%",
+			"subway": [
+				"距昌平线西二旗站直线735米",
+				"距13号线西二旗站直线735米",
+				"距13号线龙泽站直线1619米",
+				"距13号线回龙观站直线2476米"
+			],
+			"heating_type": "集体供暖",
+			"around": "本小区小桥流水绿树蓝天，居住环境非常优雅，出门向南可达食平方，羊蝎子火锅店，，烧烤夜市等店，配套设施齐全，出门向南直行亦可达中国邮政储蓄与中国工商银行，过马路即可到达建设银行西二旗支行，小区对面直行有西二旗益民市场，无论您是想吃饭，买菜水果，买狗粮猫粮甚至想擦皮鞋，西二旗益民市场里一应俱全。让您生活更自如！ ",
+			"traffic": "距离地铁13号线西二旗站步行仅需1，距离西二旗大街公交站仅需，公交车线路有333，114.636，681,618,996，可直达软件园，上地，让您上班更方便，还可直达五彩城购物商城，交通十分方便！让您的周末出行更方便！",
+			"more": 1,
+			"facilities": [],
+			"rank": "",
+			"house_num": 12,
+			"photos": [
+				"http://img.ljcdn.com/hdic-resblock/m_fill,w_800,h_600,l_ziroom,lg_south_east,lx_-0.0625w,ly_-0.0625w,q_50/31315aee-ee08-4a3d-be9b-50fa07cf1252.jpg"
+			],
+			"item": [
+				{
+					"name": "建筑年代",
+					"value": "2005"
+				},
+				{
+					"name": "建筑类型",
+					"value": "板楼"
+				},
+				{
+					"name": "供暖方式",
+					"value": "集体供暖"
+				},
+				{
+					"name": "绿化率",
+					"value": "30%"
+				}
+			],
+			"surround": [
+				{
+					"title": "交通",
+					"keywords": [
+						"地铁"
+					]
+				},
+				{
+					"title": "商超",
+					"keywords": [
+						"商场",
+						"超市"
+					]
+				},
+				{
+					"title": "教育",
+					"keywords": [
+						"小学",
+						"中学",
+						"高中"
+					]
+				},
+				{
+					"title": "餐饮",
+					"keywords": [
+						"餐馆",
+						"咖啡店"
+					]
+				},
+				{
+					"title": "金融",
+					"keywords": [
+						"银行",
+						"atm"
+					]
+				},
+				{
+					"title": "医疗",
+					"keywords": [
+						"医院"
+					]
+				}
+			]
+		},
+		"3d_showing": "",
+		"subway_primary": "距昌平线西二旗站直线735米",
+		"will_unrent_date_text": "",
+		"will_unrent_tip": "1. 当前展示的房源图片和配置物品仅供参考，实际以房源释放后的配置为准；\n\n2. 待释放房源暂不能联系管家线下看房，可先收藏，待释放后再进行约看、签约；\n\n3. 待释放房源，仍存在用户在到期前续约的可能，为提高找房成功率，建议多收藏几套作为备选。",
+		"space": [
+			{
+				"type": "308600000001",
+				"area": "13.8",
+				"face": "北",
+				"photos_min": [
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_380_285_Q80.jpg",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_380_285_Q80.jpg",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_380_285_Q80.jpg"
+				],
+				"photos_min_webp": [
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_380_285_Q80.webp",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_380_285_Q80.webp",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_380_285_Q80.webp"
+				],
+				"photos_big": [
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_800_600_Q100.jpg",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_800_600_Q100.jpg",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_800_600_Q100.jpg"
+				],
+				"photos_big_webp": [
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPSAEj9vAAxdtG0lStk773.jpg_C_800_600_Q100.webp",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5C/75/ChAFBluCQO-AWy7CAAucFCxvffs524.jpg_C_800_600_Q100.webp",
+					"//img.ziroom.com/pic/house_images/g2m1/M00/5B/49/ChAFB1uCQPKAKHCmAAv24XXantQ366.jpg_C_800_600_Q100.webp"
+				],
+				"config": [
+					{
+						"name": "空调",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/air-condition-3x.png",
+						"num": 1
+					},
+					{
+						"name": "三开门衣柜",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/chest-3x.png",
+						"num": 1
+					},
+					{
+						"name": "椅子",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/chair-3x.png",
+						"num": 1
+					},
+					{
+						"name": "床垫",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/mattress-3x.png",
+						"num": 1
+					},
+					{
+						"name": "1.5米床",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/bed-3x.png",
+						"num": 1
+					},
+					{
+						"name": "桌子",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/table-3x.png",
+						"num": 1
+					}
+				],
+				"tags": [],
+				"focus": "0",
+				"config_desc": "配有空调、三开门衣柜等",
+				"name": "03卧"
+			},
+			{
+				"type": "308600000002",
+				"area": "12.5",
+				"face": "未知",
+				"photos_min": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MhWAHt9yABP-90fmn6E414.jpg_C_380_285_Q80.jpg"
+				],
+				"photos_min_webp": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MhWAHt9yABP-90fmn6E414.jpg_C_380_285_Q80.webp"
+				],
+				"photos_big": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MhWAHt9yABP-90fmn6E414.jpg_C_800_600_Q100.jpg"
+				],
+				"photos_big_webp": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MhWAHt9yABP-90fmn6E414.jpg_C_800_600_Q100.webp"
+				],
+				"config": [
+					{
+						"name": "路由器",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/router-3x.png",
+						"num": 1
+					}
+				],
+				"tags": [],
+				"focus": "1",
+				"config_desc": "配有路由器",
+				"name": "客厅"
+			},
+			{
+				"type": "308600000004",
+				"area": "5.4",
+				"face": "未知",
+				"photos_min": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MvCAE33FABXowOAH2Ik817.jpg_C_380_285_Q80.jpg",
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MiCALmW6ABdTVL1boxI257.jpg_C_380_285_Q80.jpg"
+				],
+				"photos_min_webp": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MvCAE33FABXowOAH2Ik817.jpg_C_380_285_Q80.webp",
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MiCALmW6ABdTVL1boxI257.jpg_C_380_285_Q80.webp"
+				],
+				"photos_big": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MvCAE33FABXowOAH2Ik817.jpg_C_800_600_Q100.jpg",
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MiCALmW6ABdTVL1boxI257.jpg_C_800_600_Q100.jpg"
+				],
+				"photos_big_webp": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MvCAE33FABXowOAH2Ik817.jpg_C_800_600_Q100.webp",
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B0/ChAFD1n3MiCALmW6ABdTVL1boxI257.jpg_C_800_600_Q100.webp"
+				],
+				"config": [
+					{
+						"name": "热水器",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/water-heater-3x.png",
+						"num": 1
+					},
+					{
+						"name": "洗衣机",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/washer-3x.png",
+						"num": 1
+					}
+				],
+				"tags": [],
+				"focus": "1",
+				"config_desc": "配有热水器、洗衣机",
+				"name": "公共卫生间"
+			},
+			{
+				"type": "308600000003",
+				"area": "6.8",
+				"face": "未知",
+				"photos_min": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MuuAZAVkABY-Vp1PKaE906.jpg_C_380_285_Q80.jpg"
+				],
+				"photos_min_webp": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MuuAZAVkABY-Vp1PKaE906.jpg_C_380_285_Q80.webp"
+				],
+				"photos_big": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MuuAZAVkABY-Vp1PKaE906.jpg_C_800_600_Q100.jpg"
+				],
+				"photos_big_webp": [
+					"//img.ziroom.com/pic/house_images/g2/M00/99/B5/ChAFfVn3MuuAZAVkABY-Vp1PKaE906.jpg_C_800_600_Q100.webp"
+				],
+				"config": [
+					{
+						"name": "微波炉",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/microwave-3x.png",
+						"num": 1
+					},
+					{
+						"name": "冰箱",
+						"icon": "https://static8.ziroom.com/phoenix/app/images/freezer-3x.png",
+						"num": 1
+					}
+				],
+				"tags": [],
+				"focus": "1",
+				"config_desc": "配有微波炉、冰箱",
+				"name": "厨房"
+			}
+		],
+		"turn": {},
+		"name": "自如友家·博雅德园·3居室-03卧",
+		"banner": [],
+		"roommates": [
+			{
+				"id": "60793777",
+				"house_id": "60127970",
+				"code": "BJZRGY0817133090_01",
+				"house_code": "BJZRGY0817133090",
+				"title": "01卧",
+				"status": "ycz",
+				"price": [
+					"//static8.ziroom.com/phoenix/pc/images/price/pf_28_444/3131e45d5e9a0e80974c841421334272.png",
+					[
+						1,
+						9,
+						6,
+						8
+					]
+				],
+				"price_text": "元/月",
+				"roommate_gender": "男",
+				"roommate_horoscope": "摩羯座",
+				"status_text": "已入住"
+			},
+			{
+				"id": "60793778",
+				"house_id": "60127970",
+				"code": "BJZRGY0817133090_02",
+				"house_code": "BJZRGY0817133090",
+				"title": "02卧",
+				"status": "ycz",
+				"price": [
+					"//static8.ziroom.com/phoenix/pc/images/price/pf_28_444/3131e45d5e9a0e80974c841421334272.png",
+					[
+						0,
+						5,
+						2,
+						8
+					]
+				],
+				"price_text": "元/月",
+				"roommate_gender": "女",
+				"roommate_horoscope": "处女座",
+				"status_text": "已入住"
+			},
+			{
+				"id": "60793779",
+				"house_id": "60127970",
+				"code": "BJZRGY0817133090_03",
+				"house_code": "BJZRGY0817133090",
+				"title": "03卧",
+				"status": "ycz",
+				"price": [
+					"//static8.ziroom.com/phoenix/pc/images/price/pf_28_444/3131e45d5e9a0e80974c841421334272.png",
+					[
+						0,
+						6,
+						6,
+						8
+					]
+				],
+				"price_text": "元/月",
+				"roommate_gender": "男",
+				"roommate_horoscope": "巨蟹座",
+				"status_text": "已入住"
+			}
+		],
+		"services": {
+			"title": "服务介绍",
+			"detail": [
+				{
+					"title": "承诺",
+					"icon": "https://image.ziroom.com/g2m1/M00/69/70/ChAFB1uHVu-ATx1tAAANmh5QdRw501.png",
+					"sub_title": "三大租住承诺，安心有保障",
+					"type": "window",
+					"item": [
+						{
+							"desc": "三天不满意0违约金退租（业主直租1.0、豪宅、转、换、续租除外）",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "房屋质量问题无责换租",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "退租金额3个工作日返还自如空间（不含退租当天）",
+							"sub_desc": "",
+							"url": ""
+						}
+					]
+				},
+				{
+					"title": "品质",
+					"icon": "https://image.ziroom.com/g2m1/M00/6A/9C/ChAFBluHVwyACj28AAAK6PnZTh8586.png",
+					"sub_title": "两类品质保障，入住更无忧",
+					"type": "window",
+					"item": [
+						{
+							"desc": "真实房源",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "自如客信用体系",
+							"sub_desc": "",
+							"url": "http://zhuanti.ziroom.com/zhuanti/2018/xinyong/xinyong/index.html"
+						}
+					]
+				},
+				{
+					"title": "服务",
+					"icon": "https://image.ziroom.com/g2m1/M00/6A/9C/ChAFBluHVx-ACURvAAAN5HjE8DU728.png",
+					"sub_title": "两项日常服务，生活超便捷",
+					"type": "window",
+					"item": [
+						{
+							"desc": "月度双次保洁",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "及时维修",
+							"sub_desc": "",
+							"url": ""
+						}
+					]
+				},
+				{
+					"title": "付款",
+					"icon": "https://image.ziroom.com/g2m1/M00/69/71/ChAFB1uHVy6AAsT5AAAFpn3p7H8133.png",
+					"sub_title": "多种付款方式，支付更灵活",
+					"type": "window",
+					"item": [
+						{
+							"desc": "月付",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "季付",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "半年付（享受服务费折扣）",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "年付（享受服务费折扣）",
+							"sub_desc": "",
+							"url": ""
+						},
+						{
+							"desc": "自如客专享分期",
+							"sub_desc": "",
+							"url": "http://zhuanti.ziroom.com/zhuanti/2017/fenqi/m/index.html"
+						},
+						{
+							"desc": "自如京东白条分期",
+							"sub_desc": "",
+							"url": "http://zhuanti.ziroom.com/zhuanti/zrbaitiao/m/index.html"
+						}
+					]
+				}
+			]
+		},
+		"tips": {
+			"title": "选房新标准，教你怎么选好房",
+			"icon": "http://image.ziroom.com/g2/M00/2F/02/ChAFfVlUp6SAQjgDAAAFm-B080c786.png",
+			"content": {
+				"title": "选房新标准",
+				"desc": "1. 添加多套备选房源，提前完善个人信息；\n\n2. 选房时关注小区信息，一般来讲，地理位置好、安保健全、配套完善的小区，居住更舒适；\n\n3. 留意房屋空气质量，优先选择空气质量经权威方式检测合格，空置期超过30天的房屋；\n\n4. 敏感体质及孕妇等对空气情况有更高要求的人群，在此基础上可优先选择业主直租、非首次出租的房屋；\n\n5. 室内空气情况会随着温度变化而发生变化，建议入住后勤开窗通风，保持室内空气流通;\n\n6. 建议实地看房，看房期间轻声细语，碰到自如客可以打个招呼;\n\n7. 在毕业季等找房旺季，遇到心仪房源尽早签约，以免错过;\n\n\n若您对带看房源不够满意，管家会协助您继续寻找其他房源。\n\n祝您入住愉快，生活自如！"
+			}
+		},
+		"questions": {
+			"title": "常见问题",
+			"content": [
+				{
+					"title": "退租怎么办理？哪些情况会扣费？",
+					"desc": "【合同到期退租】\n释义：指自如客在承租合同到期时办理解约的情形\n适用对象：合同期内自如客\n申请时间：合同到期日前联系管家办理\n申请方式：APP个人中心-我的合同-变更租约-发起“我要退租”申请\n扣费/退款详情：完成物业交割并结清各项费用（水电燃气费等）后，退款将于3个工作日内（不含退租当天）返还至自如空间，绑定银行卡即可提现\n【合同未到期退租】\n释义：指自如客在合同未到期办理解约的情形\n适用对象：合同期内自如客\n申请时间：提前7天申请，若提交解约申请后45天内未实际办理解约，该申请失效\n申请方式：APP个人中心-我的合同-变更租约-发起“我要退租”申请\n扣费/退款详情：支付1个月房租作为违约金，若客户实际办理解约日期早于申请之日后7天，客户应缴租金的截止日为提出退租申请之日后7天；否则，客户应缴租金的截止日为实际解约日期\n【三天不满意0违约金退租】\n释义：指自如客在含起租日在内的3个自然日内发起退租申请并于6个自然日内完成退租手续办理的情形\n适用对象：已签订自如合同的租客（业主直租、转租、换租、续租除外）\n申请时间：含起租日在内的3个自然日内发起退租申请，如果超过6天未办理表示放弃\n申请方式：APP个人中心-我的合同-变更租约-发起“我要退租”申请\n扣费/退款详情：\n收取起租日至办理解约当日的租金、服务费，最多收取6天\n收取在住期间生活费用以及物品赔付费用（如有物品损坏）\n办理解约后退款将在3个工作日内（不含退租当天）返还至自如空间，绑定银行卡即可提现\n",
+					"link": "http://www.ziroom.com/zhuanti/2016/zzbcwa/leaseChange.html",
+					"link_title": "其他更多退租情形，点击查看"
+				},
+				{
+					"title": "从哪些方面关注空气质量？",
+					"desc": "1. 关注屋内装修状况和家具配置：\n可以实地看房，确认房屋是局部装修还是全部装修，家具是否为全新配置。自如提供的装修和家具材料均符合国家环保标准。\n2. 关注房屋是否为首次出租：\n您可以通过房屋价格下方的标签判断该房屋是否首次出租，如果出现 “首次出租”标签，则该房屋为首次出租，其装修和家具配置部分选用了自如选配的产品。若您对空气质量要求较高，为敏感体质或整租家庭用户，建议您优先选择非首次出租房源。\n",
+					"link": "",
+					"link_title": ""
+				},
+				{
+					"title": "房子到期续约的话，有什么优惠？",
+					"desc": "释义：指自如客在合同到期后继续租住本房间的情形\n适用对象：合同期内自如客\n申请时间：提前30天完成续租合同办理，可享受服务费7折优惠（业主合同到期导致无法续约除外）\n申请方式：此申请无需通过app，联系管家录入续约合同即可\n",
+					"link": "",
+					"link_title": ""
+				}
+			]
+		},
+		"sign_end_date": "",
+		"sign_end_date_text": "",
+		"sign_duration": {},
+		"ensures": {},
+		"ad_1": "http://contentful.ziroom.com/online/zuzhu/bjapp/house/8c19f571e251e61cb8dd3612f26d5ecf.json",
+		"weibo_share": {
+			"url": "http://m.ziroom.com/BJ/room?id=60793779",
+			"title": "自如这个房子不错。",
+			"content": "自如友家·博雅德园·3居室-03卧",
+			"active": 1
+		},
+		"wechat_share": {
+			"url": "http://m.ziroom.com/BJ/room?id=60793779",
+			"title": "自如这个房子不错。",
+			"content": "自如友家·博雅德园·3居室-03卧",
+			"active": 1
+		},
+		"moments_share": {
+			"url": "http://m.ziroom.com/BJ/room?id=60793779",
+			"title": "自如这个房子不错。",
+			"content": "自如友家·博雅德园·3居室-03卧",
+			"active": 1
+		},
+		"qq_share": {
+			"url": "http://m.ziroom.com/BJ/room?id=60793779",
+			"title": "自如这个房子不错。",
+			"content": "自如友家·博雅德园·3居室-03卧",
+			"active": 1
+		},
+		"qzone_share": {
+			"url": "http://m.ziroom.com/BJ/room?id=60793779",
+			"title": "自如这个房子不错。",
+			"content": "自如友家·博雅德园·3居室-03卧",
+			"active": 1
+		},
+		"miniprogram_share": {
+			"url": "http://m.ziroom.com/BJ/room?id=60793779",
+			"title": "自如友家·博雅德园·3居室-03卧",
+			"content": "自如这个房子不错。",
+			"id": "gh_0cbc07004998",
+			"path": "/pages/detail/main",
+			"active": 1
+		},
+		"activity_list": [],
+		"config": [
+			{
+				"name": "路由器",
+				"icon": "//static8.ziroom.com/phoenix/app/images/router-3x.png",
+				"num": 1
+			},
+			{
+				"name": "微波炉",
+				"icon": "//static8.ziroom.com/phoenix/app/images/microwave-3x.png",
+				"num": 1
+			},
+			{
+				"name": "冰箱",
+				"icon": "//static8.ziroom.com/phoenix/app/images/freezer-3x.png",
+				"num": 1
+			},
+			{
+				"name": "热水器",
+				"icon": "//static8.ziroom.com/phoenix/app/images/water-heater-3x.png",
+				"num": 1
+			},
+			{
+				"name": "洗衣机",
+				"icon": "//static8.ziroom.com/phoenix/app/images/washer-3x.png",
+				"num": 1
+			},
+			{
+				"name": "空调",
+				"icon": "//static8.ziroom.com/phoenix/app/images/air-condition-3x.png",
+				"num": 1
+			},
+			{
+				"name": "三开门衣柜",
+				"icon": "//static8.ziroom.com/phoenix/app/images/chest-3x.png",
+				"num": 1
+			},
+			{
+				"name": "椅子",
+				"icon": "//static8.ziroom.com/phoenix/app/images/chair-3x.png",
+				"num": 1
+			},
+			{
+				"name": "床垫",
+				"icon": "//static8.ziroom.com/phoenix/app/images/mattress-3x.png",
+				"num": 1
+			},
+			{
+				"name": "1.5米床",
+				"icon": "//static8.ziroom.com/phoenix/app/images/bed-3x.png",
+				"num": 1
+			},
+			{
+				"name": "桌子",
+				"icon": "//static8.ziroom.com/phoenix/app/images/table-3x.png",
+				"num": 1
+			}
+		]
+	}
+}
