@@ -10,8 +10,9 @@ router.init();
 // 注册路由
 /* 
     首页路由：#home,homeController.render
-    自如服务：#ziruServer,ziruServer.render
+    自如服务路由：#ziruServer,ziruServer.render
     详情页路由：#detail,detailController.render
+    自如维修路由：#repair,repairController.render
 */
 router.route('#home',homeController.render);
 router.route('#ziruServer',ziruServer.render);
