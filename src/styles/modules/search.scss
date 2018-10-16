@@ -1,0 +1,70 @@
+.searchbox{
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100%;
+    color: #666;
+    // 头部
+    header{
+        @include flexbox();
+        height: .44rem;
+        @include border(0 0 1px 0);
+        >div:first-child{
+            width: .4rem;
+            @include flexbox();
+            @include justify-content(center);
+            @include align-items(center);
+            img{
+                width: .16rem;
+                height: .16rem;
+            }
+        }
+        >div:nth-child(2){
+            @include flex();
+            input{
+                width: 100%;
+                height: 100%;
+                padding-left: .1rem;
+                color: initial;
+                border: none;
+            }
+        }
+        >div:last-child{
+            width: .4rem;
+            line-height: .44rem;
+        }
+    }
+    // 内容区
+    main{
+        @include flex();
+        width: 100%;
+        padding: .2rem .2rem 0;
+        >div{
+            margin-bottom: .4rem;
+            h3{
+                font-size: .18rem;
+                font-weight: 400;
+                color: #444;
+                margin-bottom: .16rem;
+            }
+            li{
+                float: left;
+                padding: .06rem;
+                margin: 0 .16rem .12rem 0;
+                background: #f9f9f9;
+            }
+        }
+        .searchhistory{
+            display: none;
+        }
+    }
+    // 底部
+    footer{
+        height: .72rem;
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        span{
+            font-size: .12rem;
+        }
+    }
+}

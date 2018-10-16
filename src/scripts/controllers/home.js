@@ -1,7 +1,7 @@
 import homeTpl from '../views/home.html';
 import homeContentTpl from '../views/home-content.html';
 import homeContentModel from '../models/home-content';
-
+import moreTpl from '../views/more.html';
 
 const render = () => {
     // 渲染首页

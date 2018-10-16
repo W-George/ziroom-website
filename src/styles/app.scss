@@ -1,6 +1,10 @@
 @import './style/usage/core/reset';
 
+// 首页
 @import './modules/home.scss';
+
+// 搜索页
+@import './modules/search.scss';
 
 //自如服务
 @import './modules/ziru-server.scss';
@@ -9,4 +13,6 @@
 @import './modules/detail.scss';
 
 //维修
-@import './modules/repairs.scss'
+@import './modules/repairs.scss';
+// 更多
+@import './modules/more.scss';
