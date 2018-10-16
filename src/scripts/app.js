@@ -2,6 +2,7 @@ import homeController from"./controllers/home";
 import Router from './utils/router';
 import ziruServer from './controllers/ziru-server';
 import detailController from "./controllers/detail";
+import moreController from "./controllers/more";
 
 // 实例化路由
 let router = new Router();
@@ -15,3 +16,4 @@ router.init();
 router.route('#home',homeController.render);
 router.route('#ziruServer',ziruServer.render);
 router.route('#detail',detailController.render);
+router.route('#more',moreController.render);
