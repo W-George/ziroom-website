@@ -1,0 +1,131 @@
+#root{
+    overflow-x: scroll;
+    .repair{
+        background: white;
+        header{
+            position: relative;
+            height: .5rem;
+            width: 100%;
+            padding: 0 .15rem;
+            text-align: center;
+            line-height: .5rem;
+            &:after{
+                content: '';
+                border: 10px solid transparent;
+                height: 0;
+                position: absolute;
+                width: 0;
+                border-right-color: white;
+                left: .22rem;
+                top: .16rem;
+            }
+            &:before{
+                content: '';
+                border: 10px solid transparent;
+                height: 0;
+                position: absolute;
+                width: 0;
+                border-right-color: #ff8400;
+                left: .19rem;
+                top: .16rem;
+            }
+            >span{
+                font-size: .22rem;
+            }
+            a{
+                position: absolute;
+                color: #ff8400;
+                font-size: .16rem;
+                right: .1rem;
+                top: .04rem;
+            }
+        }
+        >img{
+            width: 100%;
+            height: 2.5rem;
+        }
+        .bottomUl{
+            @include flexbox();
+            background: #a7a2bb;
+            .leftUl{
+                background: #f5f4f9;
+                li{
+                    width: 1rem;
+                    height: .6rem;
+                    @include border(0 1px 1px 0);
+                    line-height: .6rem;
+                    font-size: .18rem;
+                    color: #000;
+                    padding-left: .15rem;
+                    position: relative;
+                }
+                .active{
+                    background: white;
+                    @include border(0 1px 1px 0);
+                    &:after{
+                        content: '';
+                        width: .08rem;
+                        height: .3rem;
+                        background: #ff8503;
+                        position: absolute;
+                        left: .07rem;
+                        top: .22rem;
+                        border-radius: 3px;
+                    }
+                }
+            }
+            .rightUl{
+                background: white;
+                width: 100%;
+                >li{
+                    @include flexbox();
+                    @include border(0 0 1px 0);
+                    >div:first-child{
+                        @include border(0 1px 1px 1px);
+                        height: 1.2rem;
+                        >img{
+                            width: .7rem;
+                            height: .7rem;
+                            margin: .10rem;
+                        }
+                    }
+                    >div:last-child{
+                        padding-left: .05rem;
+                        padding-right: .1rem;
+                        // border-bottom:1px solid #eeeeee; 
+                        position: relative;
+                        &:after{
+                            content: " ";
+                            width: .12rem;
+                            height: .12rem;
+                            position: absolute;
+                            left: 90%;
+                            top: 42%;
+                            border: none;
+                            border-top: 1px solid #d1d1d1;
+                            border-right: 1px solid #d1d1d1;
+                            @include transform(rotate(45deg));
+                        }
+                        >h3{
+                            font-size: .20rem;
+                            margin: .09rem 0;
+                            font-weight: normal;
+                        }
+                        >p{
+                            color: #bbb;
+                            font-size: .13rem;
+                        }
+                        >h4{
+                            font-size: .14rem;
+                            font-weight: normal;
+                            >span{
+                                color: red;
+                                font-size: .2rem;
+                            }
+                        }
+                    }
+                }             
+            }
+        }
+    }
+}

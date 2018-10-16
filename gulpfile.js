@@ -64,6 +64,10 @@ gulp.task('server', () => {
           pathRewrite: {
             '^/api': ''
           }
+        }),
+        proxy("/maintainance", {
+          target: 'http://s.m.ziroom.com',
+          changeOrigin: true,
         })
       ]
     }))

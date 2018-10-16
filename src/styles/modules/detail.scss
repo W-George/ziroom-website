@@ -3,16 +3,28 @@
     height: 100%;
     background: white;
 }
+@font-face {
+    font-family: 'yofont';
+    src: url('/iconfonts/iconfont2/iconfont.eot');
+    src: url('/iconfonts/iconfont2/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('/iconfonts/iconfont2/iconfont.woff') format('woff'),
+    url('/iconfonts/iconfont2/iconfont.ttf') format('truetype'),
+    url('/iconfonts/iconfont2/iconfont.svg#iconfont') format('svg');
+  }
 
 .ad {
     position: relative;
     .back-pre{
         position: absolute;
         left: 0.1rem;
-        top: 0.1rem;
         z-index: 100;
         color: white;
         font-size: 0.3rem;
+
+        &>i{
+            font-size: 0.2rem;
+        }
+
     }
     .swiper-container {
         width: 3.75rem;
@@ -51,6 +63,7 @@
         overflow: hidden;
         line-height: .6rem;
         width: 100%;
+        position: relative;
         &:nth-child(1) {
             font-size: .22rem;
             float: left;
@@ -70,6 +83,7 @@
             font-size: .14rem;
             color: #999;
             float: right;
+            margin-right: 0.16rem;
         }
     }
     .house-name {
@@ -112,7 +126,20 @@
         }
     }
 }
-
+.detail-more{
+    position: absolute;
+    right: -0.04rem;
+    font-size: 0.14rem;
+}
+.detail-more-diff{
+    position: absolute;
+    right: 0.1rem;
+    font-size: 0.14rem;
+}
+.see-more{
+    float:right;
+    margin-right: 0.16rem;
+}
 .house-wrapper {
     padding-bottom: .24rem;
     & p:nth-child(2) {
@@ -165,20 +192,19 @@
         }
     }
     .tab-views{
-        overflow: hidden;
-    }
-    .config-icons{
-        overflow: hidden;
-        .single-icon{
-            margin-right: 0.3rem;
-            margin-bottom: .24rem;
-            float: left;
+        .config-icons{
+            overflow: hidden;
+            .sing-ico{
+                margin-right: 0.27rem;
+                margin-bottom: 0.24rem;
+                float: left;
 
-            img{
-                width: 0.24rem;
-                display: table;
-                margin: 0 auto;
-                margin-bottom: 0.1rem;
+                & img{
+                    width: 0.24rem;
+                    display: table;
+                    margin: 0 auto;
+                    margin-bottom: 0.1rem;
+                }
             }
         }
     }
@@ -202,6 +228,9 @@
     }
 }
 .service-wrapper{
+    .service-title{
+        position: relative;
+    }
     li{
         height: 0.44rem;
         line-height: 0.44rem;
@@ -227,6 +256,9 @@
 .traffic-wrapper{
     img{
         width: 100%;
+    }
+    .traffic-title{
+        position: relative;
     }
     .traffic-around{
         font-size: 0.14rem;
@@ -313,6 +345,29 @@
                 text-align: right;
 
             }
+        }
+    }
+}
+.fix-foot{
+    width: 100%;
+    height: 0.48rem;
+    position: fixed;
+    bottom: 0;
+    @include flexbox();
+    z-index: 1000;
+    &>span{
+        line-height: 0.48rem;
+        text-align: center;
+        @include flex();
+        color: white;
+        font-size: 0.16rem;
+        &:nth-child(1){
+            background: #ffba15;
+        }
+        &:nth-child(2){
+            background: #ddd;
+         
+           
         }
     }
 }
