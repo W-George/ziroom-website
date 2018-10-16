@@ -4,7 +4,7 @@
             <!--轮播，图片栏 -->
             <div class="ad">
                 <div class="back-pre">
-                    <img src="../../images/back-pre.jpg">
+                    <i class="yo-ico">&#xe6d8;</i>
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -41,7 +41,8 @@
 
                     </div>
                     <span>{{list.price_unit}}({{list.price_desc}})</span>
-                    <span class="pay-status">付款方式</span>
+                    <span class="pay-status see-more">付款方式</span>
+                    <i class="yo-ico detail-more">&#xe61e;</i>
                 </div>
                 <p class="house-name">{{list.name}}</p>
                 <div class="tags bor2px">
@@ -86,10 +87,12 @@
                 <div class="tab-views">
                     {{#each list.space}}
                     <div class="config-icons">
-                        {{#each this}}
-                            <!-- {{this}} -->
-                            <p>{{this.config}}</p>
-                        {{/each}}
+                       {{#each config}}
+                       <div class="sing-ico">
+                            <img src="{{icon}}">
+                            <p>{{name}}</p>
+                       </div>
+                       {{/each}}
                     </div>
                     {{/each}}
                 </div>
@@ -113,8 +116,8 @@
                 <div class="service-title tit">
                     <p class="room-mode">服务介绍</p>
                     <div class="service-more more">
-                        <span>查看全部</span>
-                        <i></i>
+                        <span class="see-more">查看全部</span>
+                        <i class="yo-ico detail-more">&#xe61e;</i>
                     </div>
                 </div>
                 <ul>
@@ -132,8 +135,8 @@
                 <div class="traffic-title tit pd36">
                     <p class="room-mode">周边及交通</p>
                     <div class="more">
-                        <span>查看介绍</span>
-                        <i></i>
+                        <span class="see-more">查看介绍</span>
+                        <i class="yo-ico detail-more-diff">&#xe61e;</i>
                     </div>
                 </div>
                 <img src="http://api.map.baidu.com/staticimage/v2?ak=CB9b776692623d30a148b5c5dc2b75a6&mcode=666666&center=116.319276,40.063329&width=800&height=360&zoom=18&markers=116.319276,40.063329&markerStyles=-1,http://api.map.baidu.com/images/marker_red.png,-1,23,25">
@@ -167,6 +170,10 @@
                     {{/each}}
                 </ul>
             </div>
+            <div class="fix-foot">
+                <span>在APP中打开</span>
+                <span>已出租</span>
+            </div>
             <footer>
                     <div class="down">
                         <a>
@@ -185,5 +192,6 @@
                     </div>
                     <p>Copyright©2017 ziroom.com</p>
                 </footer>
+
     
 </div>

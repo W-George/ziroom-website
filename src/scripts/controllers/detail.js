@@ -2,6 +2,8 @@ import detailTpl from '../views/detail.html'
 import detailModel from '../models/detail'
 // import Swiper from 'swiper'
 
+
+
 var mySwiper
 var c=0;
 const render = async () => {
@@ -52,12 +54,12 @@ const change = function () {
 }
 const changeConfig = function(){
     $('.tab-wrapper span').eq(0).addClass('act');
-
+    $('.config-icons').eq(0).css('display','block').siblings().css('display','none')
     $('.tab-wrapper span').on('tap',function(){
         $(this).addClass('act').siblings().removeClass('act')
-        var c=$(this).text()
+        var c=$(this).index()
         // 点击上面的切换下面的
-        $('.config-icons').html()
+        $('.config-icons').eq(c).css('display','block').siblings().css('display','none')
     })
 }
 
