@@ -9,18 +9,22 @@ const render = async () => {
     let html = template({
         list
     })
-
+       
     $('#root').html(html)
 
     scroll();
+    bgImg();
    
 }
 
 const scroll =()=>{
     let posScroll =  new BScroll(".main",{
         probeType:2,
+        scrollY:-40,
     })
+
 }
+
 
 export default {
     render
