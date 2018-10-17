@@ -1,0 +1,37 @@
+<div class="searchbox">
+    <!-- 头部 -->
+    <header>
+        <div>
+            <img src="../images/search.png">
+        </div>
+        <div>
+            <input type="text" placeholder="您想住哪儿" class="userinput">
+        </div>
+        <div>
+            <span>取消</span>
+        </div>
+    </header>
+    <main>
+        <div class="searchtips">
+
+        </div>
+        <div class="contentbox">
+            <!-- 搜索历史 -->
+            <div class="searchhistory">
+                <h3>搜索历史</h3>
+                <ul>
+                </ul>
+            </div>
+            <!-- 热门搜索 -->
+            <div>
+                <h3>热门搜索</h3>
+                <ul>
+                    {{#each list}}
+                    <li>{{name}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>清除历史记录</footer>
+</div>

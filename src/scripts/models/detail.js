@@ -5,8 +5,7 @@ const list = () => {
         return result
       }
     })
-  }
-   
+  } 
 export default {
 list
 }

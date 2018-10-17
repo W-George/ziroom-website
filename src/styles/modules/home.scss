@@ -24,138 +24,218 @@ body{
 .homepage{
     height: 100%;
     overflow-y: scroll;
-    header{
-        height: .44rem;
-        @include flexbox();
-        @include align-items(center);
-        >div:first-child{
-            width: .44rem;
-            line-height: .44rem;
-            text-align: center;
-        }
-        >div:nth-child(2){
-            width: 2.8rem;
-            height: .32rem;
-            line-height: .32rem;
-            color: #ddd;
-            padding-left: .18rem;
-            @include border(1px, #ddd, solid, 4px);
-            >i{
-                margin-right: .09rem;
+    // 城市选择
+    .citybox{
+        display: none;
+        header{
+            height: .44rem;
+            background: #fff;
+            position: relative;
+            img{
+                position: absolute;
+                width: .1rem;
+                height: .2rem;
+                left: .16rem;
+                top: 50%;
+                margin-top: -.1rem;
+            }
+            h1{
+                height: 100%;
+                line-height: .44rem;
+                text-align: center;
+                font-size: .18rem;
             }
         }
-        div:last-child{
-            >i{
-                margin-left: .06rem;
-                font-size: .24rem;
+        >div{
+            background: #f5f4f9;
+            h2{
+                @include border(0 0 1px 0);
+                height: .4rem;
+                line-height: .4rem;
+                padding-left: .25rem;
+                font-size: .16rem;
+            }
+            li{
+                @include border(0 0 1px 0);
+                height: .4rem;
+                line-height: .4rem;
+                background: #fff;
+                padding-left: .25rem;
+                a{
+                    float: left;
+                    height: 100%;
+                    width: 100%;
+                    color: #444;
+                }
+            }
+            .currentcity{
+                a{
+                    background: url(../images/city.png)left center no-repeat;
+                    background-size: .15rem;
+                    padding-left: .25rem;
+                }
             }
         }
     }
-    main{
-        @include flex();
+    // 菜单
+    .menubox{
+        display: none;
+        position: fixed;
+        z-index: 100;
         width: 100%;
-        background: #fff;
-        .banner{
-            height: 2.05rem;
-            img{
-                width: 100%;
-                height: 2.05rem;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .5);
+        >div{
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background: #fff;
+            li{
+                height: .4rem;
+                line-height: .4rem;
+                padding-left: .1rem;
+                @include border(0 0 1px 0);
             }
         }
-        // 下载客户端
-        .downClient{
-            display: block;
-            height: .48rem;
-            line-height: .48rem;
-            padding-left: .12rem;
-            color: #444;
-            span{
-                display: inline-block;
-                vertical-align: middle;
-                width: .32rem;
-                height: .32rem;
-                background: url('../images/zrLogoSmall.png')no-repeat center;
-                background-size: cover;
-                margin-right: .1rem;
-            }
-        }
-        // 底部logo
-        .logo{
-            height: .79rem;
-            padding: .25rem 0 .25rem;
+    }
+    // 主体内容
+    .mainbox{
+        header{
+            height: .44rem;
             @include flexbox();
-            @include justify-content(center);
-            img{
-                width: .85rem;
-                height: .25rem;
+            @include align-items(center);
+            >div:first-child{
+                width: .44rem;
+                line-height: .44rem;
+                text-align: center;
+            }
+            >div:nth-child(2){
+                width: 2.8rem;
+                height: .32rem;
+                line-height: .32rem;
+                color: #ddd;
+                padding-left: .18rem;
+                @include border(1px, #ddd, solid, 4px);
+                >i{
+                    margin-right: .09rem;
+                }
+            }
+            div:last-child{
+                @include flex();
+                text-align: center;
+                >i{
+                    font-size: .24rem;
+                }
             }
         }
-        // 内容区
-        .c-box{
-            height: 3.76rem;
-            padding: .24rem 0 .24rem .18rem;
-            @include border(1px 0 0 0);
-            div:first-child{
-                @include flexbox();
-                @include justify-content(space-between);
-                padding-right: .18rem;
-                >h3{
-                    font-size: .18rem;
+        main{
+            @include flex();
+            width: 100%;
+            background: #fff;
+            .banner{
+                height: 2.05rem;
+                img{
+                    width: 100%;
+                    height: 2.05rem;
                 }
-                >a{
-                    color: #999;
-                    i{
-                        display: inline-block;
-                        vertical-align: middle;
-                        margin-left: .02rem;
-                        width: .08rem;
-                        height: .18rem;
-                        background: url('../images/iconRight.png')no-repeat center;
-                        background-size: 100% 100%;
+            }
+            // 下载客户端
+            .downClient{
+                display: block;
+                height: .48rem;
+                line-height: .48rem;
+                padding-left: .12rem;
+                color: #444;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: .32rem;
+                    height: .32rem;
+                    background: url('../images/zrLogoSmall.png')no-repeat center;
+                    background-size: cover;
+                    margin-right: .1rem;
+                }
+            }
+            // 底部logo
+            .logo{
+                height: .79rem;
+                padding: .25rem 0 .25rem;
+                @include flexbox();
+                @include justify-content(center);
+                img{
+                    width: .85rem;
+                    height: .25rem;
+                }
+            }
+            // 内容区
+            .c-box{
+                height: 3.76rem;
+                padding: .24rem 0 .24rem .18rem;
+                @include border(1px 0 0 0);
+                div:first-child{
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    padding-right: .18rem;
+                    >h3{
+                        font-size: .18rem;
+                    }
+                    >a{
+                        color: #999;
+                        i{
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-left: .02rem;
+                            width: .08rem;
+                            height: .18rem;
+                            background: url('../images/iconRight.png')no-repeat center;
+                            background-size: 100% 100%;
+                        }
                     }
                 }
-            }
-            >div:last-child{
-                padding-top: .18rem;
-                ul{
-                    @include flexbox();
-                    overflow-x: scroll;
-                    li{
-                        margin-right: .06rem;
-                        a{
-                            color: inherit;
-                            img{
-                                width: 3.42rem;
-                                height: 2.28rem;
-                            }
-                            div{
-                                h2{
-                                    line-height: .3rem;
-                                    padding-top: .12rem;
-                                    .price{
-                                        font-size: .16rem;
-                                        font-weight: bold;
-                                    }
-                                    .title{
-                                        font-size: .16rem;
-                                        color: #444;
-                                        font-weight: 100;
-                                    }
+                >div:last-child{
+                    padding-top: .18rem;
+                    ul{
+                        @include flexbox();
+                        overflow-x: scroll;
+                        li{
+                            margin-right: .06rem;
+                            a{
+                                color: inherit;
+                                img{
+                                    width: 3.42rem;
+                                    height: 2.28rem;
                                 }
-                                p{
-                                    color: #999;
-                                    font-size: .14rem;
+                                div{
+                                    h2{
+                                        line-height: .3rem;
+                                        padding-top: .12rem;
+                                        .price{
+                                            font-size: .16rem;
+                                            font-weight: bold;
+                                        }
+                                        .title{
+                                            font-size: .16rem;
+                                            color: #444;
+                                            font-weight: 100;
+                                        }
+                                    }
+                                    p{
+                                        color: #999;
+                                        font-size: .14rem;
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-        }
-        .zrfwbox{
-            height: 3.2rem;
+            .zrfwbox{
+                height: 3.2rem;
+            }
         }
     }
+    // 底部
     footer{
         @include flexbox();
         @include flex-direction(column);
@@ -213,6 +293,15 @@ body{
             font-size: .13rem;
             text-align: center;
             @include border(1px 0 0 0,#eee,solid);
+        }
+    }
+    // 底部下载固定
+    .downfixed{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        img{
+            width: 100%;
         }
     }
 }

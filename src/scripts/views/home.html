@@ -1,78 +1,138 @@
 <div class="homepage">
-    <header>
+    <!-- 选择城市 -->
+    <div class="citybox">
+        <header>
+            <img src="../images/return.png" class="returnmainbox">
+            <h1>城市选择</h1>
+        </header>
         <div>
-            <span>北京</span>
+            <h2>当前定位城市</h2>
+            <ul class="currentcitybox">
+                <li class="currentcity">
+                    <a>北京</a>
+                </li>
+            </ul>
+            <h2>已开通城市</h2>
+            <ul class="citylist">
+                <li>
+                    <a>北京</a>
+                </li>
+                <li>
+                    <a>上海</a>
+                </li>
+                <li>
+                    <a>深圳</a>
+                </li>
+                <li>
+                    <a>杭州</a>
+                </li>
+                <li>
+                    <a>南京</a>
+                </li>
+                <li>
+                    <a>成都</a>
+                </li>
+                <li>
+                    <a>武汉</a>
+                </li>
+                <li>
+                    <a>广州</a>
+                </li>
+                <li>
+                    <a>天津</a>
+                </li>
+            </ul>
         </div>
+    </div>
+
+    <!-- 菜单 -->
+    <div class="menubox">
         <div>
-            <span>输入您想住的区域或小区</span>
+            <ul>
+                <li class="login">登录</li>
+                <li class="home">首页</li>
+                <li class="more">自如找房</li>
+            </ul>
         </div>
-        <div>
-            <i class="yo-ico">&#xe62f;</i>
-        </div>
-    </header>
-    <main>
-        <!-- 轮播图 -->
-        <div class="banner">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="http://image.ziroom.com/g2m1/M00/DA/2B/ChAFBluwkFiATnFtAAEg8lWKIbE264.jpg">
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="mainbox">
+        <header>
+            <div>
+                <span class="selectcity">北京</span>
+            </div>
+            <div class="search">
+                <span>输入您想住的区域或小区</span>
+            </div>
+            <div>
+                <i class="yo-ico showMenu">&#xe62f;</i>
+            </div>
+        </header>
+        <main>
+            <!-- 轮播图 -->
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="http://image.ziroom.com/g2m1/M00/DA/2B/ChAFBluwkFiATnFtAAEg8lWKIbE264.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://image.ziroom.com/g2/M00/99/C4/ChAFD1rdvD2AAW2FAAEAvloDzC8507.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://image.ziroom.com/g2/M00/CE/6C/ChAFfVr-NR2AIOxDAAHEGRYkrh4848.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://image.ziroom.com/g2/M00/F8/21/ChAFfVsV_ieAYErzAAHz1Auwmlg995.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://image.ziroom.com/g2/M00/65/F0/ChAFfVq8ZmqAcUl1AAHoLmS5qPY437.jpg">
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="http://image.ziroom.com/g2/M00/99/C4/ChAFD1rdvD2AAW2FAAEAvloDzC8507.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="http://image.ziroom.com/g2/M00/CE/6C/ChAFfVr-NR2AIOxDAAHEGRYkrh4848.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="http://image.ziroom.com/g2/M00/F8/21/ChAFfVsV_ieAYErzAAHz1Auwmlg995.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="http://image.ziroom.com/g2/M00/65/F0/ChAFfVq8ZmqAcUl1AAHoLmS5qPY437.jpg">
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </div>
 
-        <a class="downClient">
-            <span></span>
-            下载自如APP,立即签约好房源
-        </a>
+            <a class="downClient">
+                <span></span>
+                下载自如APP,立即签约好房源
+            </a>
 
-        <!-- 渲染数据 -->
-        <div class="contents"></div>
+            <!-- 渲染数据 -->
+            <div class="contents"></div>
 
-        <!-- 自如服务 -->
-        <div class="zrfwbox c-box">
-            <div>
-                <h3>自如服务</h3>
-                <a href="#ziruServer">查看更多<i></i></a>
+            <!-- 自如服务 -->
+            <div class="zrfwbox c-box">
+                <div>
+                    <h3>自如服务</h3>
+                    <a href="#ziruServer">查看更多<i></i></a>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#ziruServer">
+                                <img src="http://static8.ziroom.com/phoenix/msite/2016/img/banjia.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#ziruServer">
+                                <img src="http://static8.ziroom.com/phoenix/msite/2016/img/baojie.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#repair">
+                                <img src="http://static8.ziroom.com/phoenix/msite/2016/img/jiaxiu.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="#ziruServer">
-                            <img src="http://static8.ziroom.com/phoenix/msite/2016/img/banjia.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#ziruServer">
-                            <img src="http://static8.ziroom.com/phoenix/msite/2016/img/baojie.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#repair">
-                            <img src="http://static8.ziroom.com/phoenix/msite/2016/img/jiaxiu.jpg">
-                        </a>
-                    </li>
-                </ul>
+            <div class="logo">
+                <img src="//static8.ziroom.com/phoenix/msite/2016/img/logo.png">
             </div>
-        </div>
-        <div class="logo">
-            <img src="//static8.ziroom.com/phoenix/msite/2016/img/logo.png">
-        </div>
-    </main>
+        </main>
+    </div>
     <footer>
         <div class="down">
             <a>
@@ -91,4 +151,10 @@
         </div>
         <p>Copyright©2017 ziroom.com</p>
     </footer>
+    <!-- 底部下载固定 -->
+    <div class="downfixed">
+        <a href="">
+            <img src="//static8.ziroom.com/phoenix/msite/2016/img/weekapp.png?20170629">
+        </a>
+    </div>
 </div>
