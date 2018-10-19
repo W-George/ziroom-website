@@ -3,13 +3,10 @@ import Router from './utils/router';
 import searchController from './controllers/search';
 import ziruServer from './controllers/ziru-server';
 import detailController from "./controllers/detail";
-<<<<<<< HEAD
+
 import moreController from "./controllers/more";
 import repairController from "./controllers/repair";
-=======
-import repairController from "./controllers/repair";
-import moreController from "./controllers/more";
->>>>>>> master
+
 
 // 实例化路由
 let router = new Router();
@@ -27,10 +24,7 @@ router.route('#home',homeController.render);
 router.route('#search',searchController.render);
 router.route('#ziruServer',ziruServer.render);
 router.route('#detail',detailController.render);
-<<<<<<< HEAD
+
 router.route('#more',moreController.render);
 router.route('#repair',repairController.render);
-=======
-router.route('#repair',repairController.render);
-router.route('#more',moreController.render);
->>>>>>> master
+
