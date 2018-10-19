@@ -16,10 +16,12 @@
         </div>
         <div class="fillter-wrapper">
             <ul>
+                    <a href="#detail">
                 <li>
                     <span>合租</span>
 
                 </li>
+                </a>
                 <li>
                     <span>位置</span>
                 </li>
@@ -34,16 +36,21 @@
     </div>
     <div class="main">
         <div>
+                
             <ul>
                 {{#each list}}
-                <li class="item">
+                 
+                <li class="item" data-id="{{id}}">
+                    <!-- {{#id}} -->
+                   
+                    <!-- {{/id}} -->
                     <div class="house-img">
                         <img src="{{photo}}" alt="">
                     </div>
 
                     <div class="house-content">
 
-                        <h3 class="name">{{type_text}}·{{name}}</h3>
+                             <h3 class="name">{{type_text}}·{{name}}</h3>
 
                         <div class="desc">
                             <span class="area">{{area}}m | {{bedroom}}/{{floor_total}}层</span>
@@ -74,12 +81,16 @@
                         </div>
                         <!-- {{/each}} -->
                     </div>
+                
+                
                 </li>
+            
                 {{/each}}
 
 
 
             </ul>
+        
             <div class="foot">
                     <img src="../images/ajax-loader.gif" alt="">
                 </div>

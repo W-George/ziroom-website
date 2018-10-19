@@ -1,8 +1,5 @@
 import detailTpl from '../views/detail.html'
 import detailModel from '../models/detail'
-// import Swiper from 'swiper'
-
-
 
 var mySwiper
 var c=0;
@@ -27,6 +24,7 @@ const render = async () => {
     swiper();
     change();
     changeConfig();
+    zhuan()
 }
 const swiper = function(){
     mySwiper = new Swiper('.swiper-container', {
@@ -51,16 +49,22 @@ const change = function () {
     $('.swiper-name span').on('tap', function () {
         mySwiper.slideTo($(this).index() + 1)
     })
-}
+} 
 const changeConfig = function(){
     $('.tab-wrapper span').eq(0).addClass('act');
     $('.config-icons').eq(0).css('display','block').siblings().css('display','none')
+    $('.tab-title').eq(0).css('display','block').siblings().css('display','none')
     $('.tab-wrapper span').on('tap',function(){
         $(this).addClass('act').siblings().removeClass('act')
         var c=$(this).index()
         // 点击上面的切换下面的
-        $('.config-icons').eq(c).css('display','block').siblings().css('display','none')
+        $('.tab-title').eq(c).css('display','block').siblings().css('display','none')
+        // $('.config-icons').eq(c).css('display','block').siblings().css('display','none')
     })
+}
+const zhuan =function(){
+    // location
+    location.href
 }
 
 export default {
