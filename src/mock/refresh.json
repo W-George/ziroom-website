@@ -1,0 +1,31 @@
+{
+  "content": {
+    "data": {
+      "isLogin": false,
+      "page": {
+        "pageSize": 15,
+        "start": "15",
+        "result": [{
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 3893102,
+          "positionName": "SEM主管-9",
+          "city": "上海",
+          "createTime": "今天 11:10",
+          "salary": "10k-15k",
+          "companyId": 46605,
+          "companyLogo": "i/image2/M00/35/6C/CgoB5lpEjN6ALjTlAABTba17HJg551.png",
+          "companyName": "VIP陪练",
+          "companyFullName": "上海妙克信息科技有限公司"
+        }],
+        "totalCount": "320802",
+        "pageNo": 2
+      }
+    },
+    "rows": []
+  },
+  "message": "第2页数据,每页15条, 查询成功!",
+  "state": 1
+}

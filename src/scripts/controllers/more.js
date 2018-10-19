@@ -23,20 +23,6 @@ const renderData = async () => {
     let html = template({
         list
     })
-<<<<<<< HEAD
-       
-    $('#root').html(html)
-
-    scroll();
-    bgImg();
-   
-}
-
-const scroll =()=>{
-    let posScroll =  new BScroll(".main",{
-        probeType:2,
-        scrollY:-40,
-=======
     $('.main').html(html)
 }
 
@@ -60,21 +46,16 @@ const scroll = async () => {
                 ...datasource,
                 ...result.data.rooms,
               ]
-            //   console.log(list)
+              console.log(list)
             this.refresh()
             this.scrollTo(0, this.maxScrollY + 40)
 
         }
->>>>>>> master
     })
 
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 export default {
     render
 }
