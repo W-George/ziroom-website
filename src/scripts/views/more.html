@@ -1,99 +1,48 @@
-<!-- {{#each list.space}}
-{{/each}} -->
+
 <div class="wrap">
     <div class="app-wrapper">
+        <!-- header -->
         <div class="seach-wrapper">
             <div class="back">
-                <i class="yo-ico">&#xe62f;</i>
+                <i class="yo-ico">&#xe6d8;</i>
             </div>
-
             <div class="input-wrapper">
                 <div class="icon-search">
-                    <i class="yo-ico">&#xe62f;</i>
+                    <i class="yo-ico">&#xe613;</i>
                 </div>
                 <div class="input-text">输入您想住的区域或小区</div>
             </div>
         </div>
+        <!-- nav -->
         <div class="fillter-wrapper">
             <ul>
-                    <a href="#detail">
+                    <a href="?id={{id}}#detail">
                 <li>
                     <span>合租</span>
-
                 </li>
                 </a>
                 <li>
                     <span>位置</span>
+                    <i class="yo-ico">&#xe60c;</i>
                 </li>
                 <li>
                     <span>租金</span>
+                    <i class="yo-ico">&#xe60c;</i>
                 </li>
                 <li class="remove">
                     <span>筛选</span>
+                    <i class="yo-ico">&#xe60c;</i>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="main">
-        <div>
-                
-            <ul>
-                {{#each list}}
-                 
-                <li class="item" data-id="{{id}}">
-                    <!-- {{#id}} -->
-                   
-                    <!-- {{/id}} -->
-                    <div class="house-img">
-                        <img src="{{photo}}" alt="">
-                    </div>
-
-                    <div class="house-content">
-
-                             <h3 class="name">{{type_text}}·{{name}}</h3>
-
-                        <div class="desc">
-                            <span class="area">{{area}}m | {{bedroom}}/{{floor_total}}层</span>
-                            <div class="price-img-wrapper">
-                                <span>2</span>
-                                <span>2</span>
-                                <span>2</span>
-                                <span>2</span>
-                            </div>
-                            <span class="price">/月</span>
-
-                        </div>
-
-
-                        <!-- 地址 -->
-                        <div class="address">
-                            <div class="add">
-                                <i class="yo-ico">&#xe62f;</i>
-                            </div>
-
-                            <span class="address-text">{{subway_station_info}}</span>
-                        </div>
-                        <!-- {{#each list}}  -->
-                        <div class="house-tag">
-                            <span>离地铁近</span>
-                            <span>离地铁近</span>
-                            <span>离地铁近</span>
-                        </div>
-                        <!-- {{/each}} -->
-                    </div>
-                
-                
-                </li>
-            
-                {{/each}}
-
-
-
-            </ul>
-        
-            <div class="foot">
-                    <img src="../images/ajax-loader.gif" alt="">
-                </div>
+    <div class="scroll">
+        <div class="main">
+            <!-- 渲染数据 -->
         </div>
+    </div>
+    <!-- 加载更多 -->
+    <div class="foot">
+        <img src="../images/ajax-loader.gif" alt="">
     </div>
 </div>

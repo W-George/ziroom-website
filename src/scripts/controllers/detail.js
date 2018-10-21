@@ -63,8 +63,8 @@ const changeConfig = function(){
     })
 }
 const zhuan =function(){
-    // location
-    location.href
+const url=location.href.split('?')[1].split('/')[0].split('=')[1]
+    console.log(url)
 }
 
 export default {
