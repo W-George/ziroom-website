@@ -29,9 +29,9 @@ body{
          .back{
             width: 0.64rem;
             height: 0.1rem;
-            line-height: 0.2rem;
+            line-height: 0.3rem;
             text-align: center;
-            line-height: 0.15rem;
+            line-height: 0.3rem;
             font-size: 20px;
         }
         .input-wrapper{
@@ -47,8 +47,11 @@ body{
             text-overflow: ellipsis;
             .icon-search{
                 width: 0.5rem;
-                line-height: 0.2rem;
+                line-height: 0.3rem;
                 text-align: center;
+                font-size: 0.2rem;
+                font-weight: 900;
+                color: #000;
            }
            .input-text{
                line-height: 0.3rem;
@@ -56,6 +59,7 @@ body{
         }   
       }
       .fillter-wrapper{ 
+          position: relative;
           border-bottom:  1px solid #f9f9f9;       
         ul{
             @include flexbox();
@@ -67,23 +71,180 @@ body{
                 text-align: center;
                 :first-child{
                     font-size: 0.14rem;
-                }
+                }   
                 
-               
             }
-            li:after{
+            .after:after{
                 content: "";
                 margin-left: 0.22rem;
                 height: .37rem;
                 border-right: 1px solid #ddd;
+            
             }
-             ul>:last-child{
-                :after{
-                    display: none;
+            :nth-of-type(4):after{
+                border: none;
+            }
+            .act{
+                color: #ffa000;
+                border-color: #ffa000;
+            }
+           
+             
+        }
+        .filter-view-wrapper{
+            position: absolute;
+            top: 0.48rem;
+            z-index: 99999;
+            width: 102%;
+            height: 100%;
+            // 
+            .hezu{
+                height: 0.6;
+                background: #fff;
+                display: none;
+                .hezu-content-wrapper{
+                    height: 100%;
+                    ul{
+                        flex-wrap: wrap;
+                        li{
+                            height: 1.13rem;
+                            background: #fff;
+                            padding-bottom: .1rem;
+                            font-size: .18rem;
+                            h3{
+                                text-align: center;
+                                color: #444;
+                                margin-bottom: .1rem;
+                                height: 0.13rem;
+    
+                            }
+                            p{
+                                text-align: center;
+                                font-size: .012rem;
+                                margin-bottom: .213rem;
+                                color: #999;
+                                height: 0.12rem;
+    
+                            }
+                            .checkbox-box{
+                                @include flexbox();
+                                @include justify-content(space-between);
+                                p{
+                                    width: 0.79rem;
+                                    height: 0.32rem;
+                                    line-height: 0.32rem;
+                                    margin-top: 0.1rem;
+                                    text-align: center;
+                                    border: 1px solid #ddd;
+                                    border-radius: .026rem;
+                                    font-size: .125rem;
+                                    color: #999;
+    
+                                }
+                            }
+                        }
+                    }
+     
+                }
+                .hezu-btns-wrapper{
+                    width: 100%;
+                    margin-top: 0.5rem;
+                    line-height: 0.5rem;
+                    text-align: center;
+                    background: #fff;
+                    box-shadow: 0 -0.107rem 0.213rem 0 #eee;
+                    .bths{
+                       height: 0.44rem;
+                       border: none;
+
+                    }
+                    .rest-btn{
+                          background:#ccc;
+                          height: 0.5865rem;
+                          width: 1.1rem;
+                          line-height: 0.5863rem;
+                          text-align: center;
+                    }
+                    .confrim-btn{
+                        width: 2.2rem;
+                        height: 0.5865rem;
+                        line-height: 0.5865rem;
+                        text-align: center;
+                        background: #ffa000;
+                        border: none;
+                    }
+                }
+            }
+
+        }
+        .weiz{
+            display: none;
+            .box{
+                height: 5.81rem;
+                position: absolute;
+                z-index: 99999;
+                
+                background: rgba(0,0,0,0.3) !important;
+                @include flexbox();
+                @include justify-content(space-between);
+                .weiz-left{
+                    width: 1.7rem;
+                    height: 3.75rem;
+                    background: #fff;
+                    margin: 0 auto;
+                    
+                    >div{
+                        width: 1.7rem;
+                        text-align: center;
+                        display: block;
+                        margin-top: .32rem;
+                        font-size: .15rem;
+                        color: #666;
+                    }
+                    >div:after{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        bottom: -.1rem;
+                        left: 50%;
+                        width: 0.5rem;
+                        margin-left: -1.2rem;
+                        height: .01rem;
+                        background-color: #ffa000;
+                     }
+                }
+                .weiz-right{
+                 height: 3.75rem;
+                 width: 1.87rem;
+                 flex-wrap: wrap;
+                 background: #f5f5f5;
+                 overflow: hidden;
+                 p{
+                    width: 1.7rem;
+                    text-align: center;
+                    display: block;
+                    padding-top: .32rem;
+                    font-size: .15rem;
+                    color: #666;
+                    position: relative;
+                 }
+                //  p:after{
+                //     content: "";
+                //     display: inline-block;
+                //     position: absolute;
+                //     bottom: -.1rem;
+                //     left: 50%;
+                //     width: 0.5rem;
+                //     margin-left: 0.5rem;
+                //     height: .01rem;
+                //     background-color: #ffa000;
+                //  }
+               
                 }
             }
         }
-    }
+     }
+
   }
 //   main
 .scroll{
