@@ -53,15 +53,16 @@ const quickSearch = () => {
     $('.hotsearch').on('tap', (e) => {
         // 获取热门搜索关键字
         let title = $(e.target).text();
+        $('.userinput').val(title);
         // 调用ajax获取数据
-        console.log(title)
+        // console.log(title)
     })
 }
 
-// 返回首页
+// 返回上一级
 const returnHistory = () => {
     $('.returnhistory').on('tap', () => {
-        location.hash = '#home';
+        window.history.go(-1);
     })
 }
 
