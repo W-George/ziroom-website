@@ -1,0 +1,39 @@
+<div>
+    <ul>
+        {{#each list}}
+        <li class="item">
+            <div class="house-img">
+                <img src="{{photo}}" alt="">
+            </div>
+            <div class="house-content">
+                <h3 class="name">{{type_text}}·{{name}}</h3>
+                <div class="desc">
+                    <span class="area">{{area}}m | {{bedroom}}/{{floor_total}}层</span>
+                    <div class="price-img-wrapper">
+                        <span>2</span>
+                        <span>2</span>
+                        <span>2</span>
+                        <span>2</span>
+                    </div>
+                    <span class="price">/月</span>
+                </div>
+
+                <!-- 地址 -->
+                <div class="address">
+                    <div class="add">
+                        <i class="yo-ico">&#xe62f;</i>
+                    </div>
+                    <span class="address-text">{{subway_station_info}}</span>
+                </div>
+                <div class="house-tag">
+                        {{#each tags}}
+                        <span>{{title}}</span>
+                        {{/each}}
+
+                    </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+   
+</div>

@@ -5,29 +5,40 @@ body{
 #root{
     height: 100%;
 }
+@font-face {
+    font-family: 'yofont';
+    src: url('/iconfonts/iconfont2/iconfont.eot');
+    src: url('/iconfonts/iconfont2/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('/iconfonts/iconfont2/iconfont.woff') format('woff'),
+    url('/iconfonts/iconfont2/iconfont.ttf') format('truetype'),
+    url('/iconfonts/iconfont2/iconfont.svg#iconfont') format('svg');
+  }
+
 .wrap{
     .app-wrapper{
         padding-top: .1rem;
         background: #fff;
+        padding-left: 0.1rem;
+        padding-right: 0.2rem;
       .seach-wrapper{
-        position: relative;
         width: 100%;
         height: .3rem;
         line-height: .3rem;
+        @include flexbox();
+        @include justify-content(space-between);
          .back{
-            position: absolute;
             width: 0.64rem;
-            top: .04rem;
-            left: 0;
+            height: 0.1rem;
+            line-height: 0.3rem;
             text-align: center;
+            line-height: 0.3rem;
+            font-size: 20px;
         }
         .input-wrapper{
             @include flexbox();
             background-color: #f5f5f5;
             border-radius:1.35rem;
-            position: absolute;
-            left: 0.64rem;
-            top: 0.04rem;
+            width: 6.21rem;
             height: 0.3rem;
             right: .22rem;
             color: #999;
@@ -36,11 +47,19 @@ body{
             text-overflow: ellipsis;
             .icon-search{
                 width: 0.5rem;
+                line-height: 0.3rem;
                 text-align: center;
+                font-size: 0.2rem;
+                font-weight: 900;
+                color: #000;
+           }
+           .input-text{
+               line-height: 0.3rem;
            }
         }   
       }
       .fillter-wrapper{ 
+          position: relative;
           border-bottom:  1px solid #f9f9f9;       
         ul{
             @include flexbox();
@@ -52,117 +71,271 @@ body{
                 text-align: center;
                 :first-child{
                     font-size: 0.14rem;
-                }
+                }   
                 
-               
             }
-            li:after{
+            .after:after{
                 content: "";
                 margin-left: 0.22rem;
                 height: .37rem;
                 border-right: 1px solid #ddd;
+            
             }
-             ul>:last-child{
-                :after{
-                    display: none;
+            :nth-of-type(4):after{
+                border: none;
+            }
+            .act{
+                color: #ffa000;
+                border-color: #ffa000;
+            }
+           
+             
+        }
+        .filter-view-wrapper{
+            position: absolute;
+            top: 0.48rem;
+            z-index: 99999;
+            width: 102%;
+            height: 100%;
+            // 
+            .hezu{
+                height: 0.6;
+                background: #fff;
+                display: none;
+                .hezu-content-wrapper{
+                    height: 100%;
+                    ul{
+                        flex-wrap: wrap;
+                        li{
+                            height: 1.13rem;
+                            background: #fff;
+                            padding-bottom: .1rem;
+                            font-size: .18rem;
+                            h3{
+                                text-align: center;
+                                color: #444;
+                                margin-bottom: .1rem;
+                                height: 0.13rem;
+    
+                            }
+                            p{
+                                text-align: center;
+                                font-size: .012rem;
+                                margin-bottom: .213rem;
+                                color: #999;
+                                height: 0.12rem;
+    
+                            }
+                            .checkbox-box{
+                                @include flexbox();
+                                @include justify-content(space-between);
+                                p{
+                                    width: 0.79rem;
+                                    height: 0.32rem;
+                                    line-height: 0.32rem;
+                                    margin-top: 0.1rem;
+                                    text-align: center;
+                                    border: 1px solid #ddd;
+                                    border-radius: .026rem;
+                                    font-size: .125rem;
+                                    color: #999;
+    
+                                }
+                            }
+                        }
+                    }
+     
+                }
+                .hezu-btns-wrapper{
+                    width: 100%;
+                    margin-top: 0.5rem;
+                    line-height: 0.5rem;
+                    text-align: center;
+                    background: #fff;
+                    box-shadow: 0 -0.107rem 0.213rem 0 #eee;
+                    .bths{
+                       height: 0.44rem;
+                       border: none;
+
+                    }
+                    .rest-btn{
+                          background:#ccc;
+                          height: 0.5865rem;
+                          width: 1.1rem;
+                          line-height: 0.5863rem;
+                          text-align: center;
+                    }
+                    .confrim-btn{
+                        width: 2.2rem;
+                        height: 0.5865rem;
+                        line-height: 0.5865rem;
+                        text-align: center;
+                        background: #ffa000;
+                        border: none;
+                    }
+                }
+            }
+
+        }
+        .weiz{
+            display: none;
+            .box{
+                height: 5.81rem;
+                position: absolute;
+                z-index: 99999;
+                
+                background: rgba(0,0,0,0.3) !important;
+                @include flexbox();
+                @include justify-content(space-between);
+                .weiz-left{
+                    width: 1.7rem;
+                    height: 3.75rem;
+                    background: #fff;
+                    margin: 0 auto;
+                    
+                    >div{
+                        width: 1.7rem;
+                        text-align: center;
+                        display: block;
+                        margin-top: .32rem;
+                        font-size: .15rem;
+                        color: #666;
+                    }
+                    >div:after{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        bottom: -.1rem;
+                        left: 50%;
+                        width: 0.5rem;
+                        margin-left: -1.2rem;
+                        height: .01rem;
+                        background-color: #ffa000;
+                     }
+                }
+                .weiz-right{
+                 height: 3.75rem;
+                 width: 1.87rem;
+                 flex-wrap: wrap;
+                 background: #f5f5f5;
+                 overflow: hidden;
+                 p{
+                    width: 1.7rem;
+                    text-align: center;
+                    display: block;
+                    padding-top: .32rem;
+                    font-size: .15rem;
+                    color: #666;
+                    position: relative;
+                 }
+                //  p:after{
+                //     content: "";
+                //     display: inline-block;
+                //     position: absolute;
+                //     bottom: -.1rem;
+                //     left: 50%;
+                //     width: 0.5rem;
+                //     margin-left: 0.5rem;
+                //     height: .01rem;
+                //     background-color: #ffa000;
+                //  }
+               
                 }
             }
         }
-    }
+     }
+
   }
 //   main
-.main{
+.scroll{
     height: 5.60rem;
     overflow: hidden;
-    >div{
-        overflow:hidden;
-        // height: 100%;
-        .item{
-            padding: .2rem .16rem;
-            height: 1.35rem;
-            border-bottom:  1px solid #f9f9f9;       
-            @include flexbox();
-            .house-img{
-                width: 1.275rem;
-                height: 0.95rem;
-                img{
+    .main{
+        >div{
+            .item{
+                padding: .2rem .16rem;
+                height: 1.35rem;
+                border-bottom:  1px solid #f9f9f9;       
+                @include flexbox();
+                .house-img{
                     width: 1.275rem;
                     height: 0.95rem;
+                    img{
+                        width: 1.275rem;
+                        height: 0.95rem;
+                    }
                 }
-            }
-            .house-content{
-                padding-left:.16rem;
-                height: 0.95rem;
-                 .name{
-                    white-space: nowrap;
-                    overflow: hidden;
-                    width: 2rem;
-                    text-overflow: ellipsis;
-                    line-height: 0.3rem;
-                    color: #444;
+                .house-content{
+                    padding-left:.16rem;
+                    height: 0.95rem;
+                     .name{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        width: 2rem;
+                        text-overflow: ellipsis;
+                        line-height: 0.3rem;
+                        color: #444;
+                    }
+                    .desc{
+                        margin: .05rem 0;
+                        line-height: .14rem;
+                        overflow: hidden;
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        .area{
+                            width: 0.92rem;
+                        }
+                        .price-img-wrapper{
+                           span{
+                            width: 0.133rem;
+                            height: 0.2rem;
+                           }
+                        }
+                        .price{
+                            font-size: .15rem;
+                            color: #ffa000;
+                        }
+                    }
                 }
-                .desc{
-                    margin: .05rem 0;
-                    line-height: .14rem;
-                    overflow: hidden;
+                .address{
                     @include flexbox();
-                    @include justify-content(space-between);
-                    .area{
-                        width: 0.92rem;
-                    }
-                    .price-img-wrapper{
-                       span{
-                        width: 0.133rem;
-                        height: 0.2rem;
-                       }
-                    }
-                    .price{
-                        font-size: .15rem;
-                        color: #ffa000;
-                    }
-                }
-            }
-            .address{
-                @include flexbox();
-                height: 0.1rem;
-                margin-bottom: .146rem;
-                font-size: .112rem;
-                color: #999;
-                .add{
-                    width: 0.15rem;
                     height: 0.1rem;
-                }
-            }
-            .house-tag{
-                @include flexbox();
-                span{
-                    height: 0.18rem;
-                    line-height: 0.1rem;
-                    font-size: .11rem;
+                    margin-bottom: .146rem;
+                    font-size: .112rem;
                     color: #999;
-                    border: 1px solid #c8c8c8;
-                    padding: .05rem .05rem;
-                    margin-right: 0.08rem;
+                    .add{
+                        width: 0.15rem;
+                        height: 0.1rem;
+                    }
                 }
-            }
-            
-          }
-          .foot {
-            @include flexbox();
-            @include align-items(center);
-            @include justify-content(center);
-            height: .4rem;
-          }
-            .foot img {
-                width: .16rem;
-                height: .16rem;
+                .house-tag{
+                    @include flexbox();
+                    span{
+                        height: 0.18rem;
+                        line-height: 0.1rem;
+                        font-size: .11rem;
+                        color: #999;
+                        border: 1px solid #c8c8c8;
+                        padding: .05rem .05rem;
+                        margin-right: 0.08rem;
+                    }
+                }
                 
-            }
-       
-       
-       
-       
+              }
+            }         
         }
+     
     }
- 
 }
+// foot
+.foot {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    height: .4rem;
+    >img {
+        width: .16rem;
+        height: .16rem;
+    }
+    
+  }

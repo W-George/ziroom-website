@@ -1,10 +1,10 @@
 <div id="main">
     <div class="back">
-
+     
             <!--轮播，图片栏 -->
             <div class="ad">
                 <div class="back-pre">
-                    <i class="yo-ico">&#xe6d8;</i>
+                    <a href="javascript:history.go(-1)"><i class="yo-ico">&#xe6d8;</i></a>  
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -72,7 +72,7 @@
                 <p class="room-mode">户型配套</p>
                 <div class="housetype-hx" style="background-image:url({{list.hx_photos_big}})">
                 </div>
-            </div>
+            </div> 
             <!-- 配置 -->
             <div class="config-wrapper bor2px pd36">
                 <div class="tab-wrapper bor2px">
@@ -80,10 +80,17 @@
                     <span>{{name}}</span>
                     {{/each}}
                 </div>
-                <div class="tab-title">
-                    <span>面积 · {{list.area}}</span>
-                    <span>朝向 · {{list.face}}</span>
+                
+                <div>
+                        {{#each list.space}}
+                        <div class="tab-title">
+                                <span>面积 · {{area}} m²</span>
+                                <span>朝向 · {{face}}</span>
+                            </div>
+                            {{/each}}
                 </div>
+                
+                
                 <div class="tab-views">
                     {{#each list.space}}
                     <div class="config-icons">
