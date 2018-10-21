@@ -62,6 +62,13 @@ const scroll = async () => {
     })
 
 }
+const click=()=>{
+    $('.item').on('tap',function(){ 
+    // location.href='#detail?id='+$(this).attr('data-id')
+    console.log($(this).children().eq(0).attr('href'))
+    // $('.tiao').attr('href','#detail'+$(this).attr("data-id"))
+    })
+}
 
 // 鼠标滑过ul
 const move = function(){

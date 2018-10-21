@@ -21,8 +21,12 @@
         color: white;
         font-size: 0.3rem;
 
-        &>i{
+        i{
             font-size: 0.2rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
         }
 
     }
