@@ -9,7 +9,6 @@ const render = async () => {
     // 渲染页面
     $("#root").html(moreTpl);
     let list = (await moreModel.data()).data.rooms;
-    console.log(list);
     // 动态渲染数据
     await renderData(list);
     // 滚动
@@ -18,14 +17,15 @@ const render = async () => {
     move()
     // 滚动附近
     scrollFj()
-    
+    // 点击ul>li改变颜色
     mousenter()
+    // 跳转
+    tiao()
 
 }
 
 // 动态渲染数据
 const renderData = async (list) => {
-
     let template = Handlebars.compile(morelistTpl)
     let html = template({
         list
@@ -36,7 +36,8 @@ const renderData = async (list) => {
 // 滚动list
 const scroll = async () => {
     let posScroll = new BScroll(".scroll", {
-        probeType: 2
+        probeType: 2,
+        click: true
     })
 
 
@@ -112,10 +113,12 @@ const move = function(){
 // 滚动附近
 const scrollFj = async () => {
     let posScroll = new BScroll(".weiz-right", {
-        probeType: 2
+        probeType: 2,
+        click:true
     })
 }
 
+// 点击ul《li
 const mousenter = function(){
     $('.weiz_right_p p').on('tap',function(){
         // console.log($(this).index())
@@ -126,6 +129,14 @@ const mousenter = function(){
         $(this).css("color","#ffa000").siblings().css("color","")
     })
 }
+
+// 跳转
+const tiao = function(){
+    $('.item').on('touchstart', function(){
+        window.location.href='?id='+$(this).attr('data-id')+'#detail';
+    })
+}
+
 export default {
     render
 }

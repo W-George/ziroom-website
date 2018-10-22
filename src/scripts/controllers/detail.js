@@ -24,7 +24,7 @@ const render = async () => {
     swiper();
     change();
     changeConfig();
-    zhuan()
+    // zhuan()
 }
 const swiper = function(){
     mySwiper = new Swiper('.swiper-container', {
@@ -62,10 +62,10 @@ const changeConfig = function(){
         // $('.config-icons').eq(c).css('display','block').siblings().css('display','none')
     })
 }
-const zhuan =function(){
-const url=location.href.split('?')[1].split('/')[0].split('=')[1]
-    console.log(url)
-}
+// const zhuan =function(){
+// const url=location.href.split('?')[1].split('/')[0].split('=')[1]
+//     console.log(url)
+// }
 
 export default {
     render
