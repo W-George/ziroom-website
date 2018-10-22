@@ -98,6 +98,8 @@
     .tags {
         margin-top: .24rem;
         padding-bottom: .1rem;
+        @include flexbox();
+        justify-content: space-between;
         span {
             border: 1px solid #999;
             border-radius: 4px;
@@ -105,7 +107,6 @@
             color: #444;
             padding: .07rem .09rem;
             text-align: center;
-            margin-right: .14rem;
             margin-bottom: .14rem;
         }
     }

@@ -24,7 +24,7 @@ const render = async () => {
     swiper();
     change();
     changeConfig();
-    zhuan()
+    // zhuan()
 }
 const swiper = function(){
     mySwiper = new Swiper('.swiper-container', {
@@ -59,13 +59,13 @@ const changeConfig = function(){
         var c=$(this).index()
         // 点击上面的切换下面的
         $('.tab-title').eq(c).css('display','block').siblings().css('display','none')
-        // $('.config-icons').eq(c).css('display','block').siblings().css('display','none')
+        $('.config-icons').eq(c).css('display','block').siblings().css('display','none')
     })
 }
-const zhuan =function(){
-const url=location.href.split('?')[1].split('/')[0].split('=')[1]
-    console.log(url)
-}
+// const zhuan =function(){
+// const url=location.href.split('?')[1].split('/')[0].split('=')[1]
+//     console.log(url)
+// }
 
 export default {
     render
