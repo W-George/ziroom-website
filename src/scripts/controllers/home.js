@@ -86,7 +86,7 @@ const showMenu = () => {
         }
         // 首页
         if (target.className == "home") {
-            location.reload();
+            location.hash = '#home';
         }
         // 自如找房
         if (target.className == "more") {

@@ -3,6 +3,8 @@ const server = require('gulp-webserver');
 const sass = require('gulp-sass');
 const webpack = require('webpack-stream');
 const proxy = require('http-proxy-middleware');
+// 队列执行
+const gulpSequence = require("gulp-sequence");
 
 gulp.task('packjs', () => {
   return gulp.src('./src/scripts/**/*.js')
@@ -56,8 +58,8 @@ gulp.task('server', () => {
         proxy("/v7", {
           target: 'http://m.ziroom.com',
           changeOrigin: true,
-          }),
-          
+        }),
+
         proxy("/api", {
           target: 'http://m.ziroom.com',
           changeOrigin: true,
@@ -111,6 +113,6 @@ gulp.task('watch', () => {
 })
 
 // default task
-gulp.task('default', ['packscss', 'packjs', 'copyhtml', 'copylibs', 'copyicons', 'server', 'watch', 'copyimages'], () => {
-  console.log('all works!')
+gulp.task('default', function (cb) {
+  gulpSequence(['packscss', 'packjs', 'copylibs', 'copyicons', 'copyhtml', 'watch', 'copyimages'],  'server')(cb)
 })
