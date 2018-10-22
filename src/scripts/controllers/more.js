@@ -46,16 +46,16 @@ const scroll = async () => {
         let y = this.y,
             maxY = this.maxScrollY - y;
         if (maxY >= -40 && maxY < 0) {
-            this.scrollTop = (0,this.maxScrollY+40)
+            this.scrollTop = (0, this.maxScrollY + 40)
         } else if (maxY >= 0) {
             // 下拉刷新加载数据
             let result = await moreModel.load(++pageNo);
             let list = datasource = [
                 ...datasource,
                 ...result.data.rooms
-              ];
+            ];
             renderData(list);
-              console.log(list)
+            console.log(list)
             this.refresh()
             this.scrollTo(0, this.maxScrollY + 40)
 
@@ -63,50 +63,50 @@ const scroll = async () => {
     })
 
 }
-const click=()=>{
-    $('.item').on('tap',function(){ 
-    // location.href='#detail?id='+$(this).attr('data-id')
-    console.log($(this).children().eq(0).attr('href'))
-    // $('.tiao').attr('href','#detail'+$(this).attr("data-id"))
+const click = () => {
+    $('.item').on('tap', function () {
+        // location.href='#detail?id='+$(this).attr('data-id')
+        console.log($(this).children().eq(0).attr('href'))
+        // $('.tiao').attr('href','#detail'+$(this).attr("data-id"))
     })
 }
 
 // 鼠标滑过ul
-const move = function(){
+const move = function () {
     let flag = true;
 
     $('.nav li').eq(0).addClass('act')
 
     let indexA = 0;
 
-    $('.nav li').on('tap',function(){
+    $('.nav li').on('tap', function () {
         // alert()
-        var index=$(this).index()
+        var index = $(this).index()
         // console.log(index)
-        if(indexA == index){
+        if (indexA == index) {
 
-            if(flag){
-                
+            if (flag) {
+
                 $(this).addClass('act').siblings().removeClass('act')
                 // 点击上面的切换下面的
-                $('.filter-hov').eq(index).css('display','block').siblings().css('display','none');
-        
+                $('.filter-hov').eq(index).css('display', 'block').siblings().css('display', 'none');
+
                 flag = false;
-        
-                }else{
-        
-                    flag = true;
-        
-                    $('.filter-hov').eq(index).css('display','none')
-                }
-        }else{
+
+            } else {
+
+                flag = true;
+
+                $('.filter-hov').eq(index).css('display', 'none')
+            }
+        } else {
             $(this).addClass('act').siblings().removeClass('act')
             // 点击上面的切换下面的
-            $('.filter-hov').eq(index).css('display','block').siblings().css('display','none');
+            $('.filter-hov').eq(index).css('display', 'block').siblings().css('display', 'none');
         }
-       
 
-       indexA = index;
+
+        indexA = index;
     })
 }
 
@@ -114,26 +114,25 @@ const move = function(){
 const scrollFj = async () => {
     let posScroll = new BScroll(".weiz-right", {
         probeType: 2,
-        click:true
+        click: true
     })
 }
 
 // 点击ul《li
-const mousenter = function(){
-    $('.weiz_right_p p').on('tap',function(){
-        // console.log($(this).index())
-        $(this).css("color","#ffa000").siblings().css("color","")
+const mousenter = function () {
+    $('.weiz_right_p p').on('tap', function () {
+        $(this).css("color", "#ffa000").siblings().css("color", "")
     })
 
-    $('.weiz-left-div').on("tap",function(){
-        $(this).css("color","#ffa000").siblings().css("color","")
+    $('.weiz-left-div').on("tap", function () {
+        $(this).css("color", "#ffa000").siblings().css("color", "")
     })
 }
 
 // 跳转
-const tiao = function(){
-    $('.item').on('touchstart', function(){
-        window.location.href='?id='+$(this).attr('data-id')+'#detail';
+const tiao = function () {
+    $('.item').on('touchstart', function () {
+        window.location.href = '?id=' + $(this).attr('data-id') + '#detail';
     })
 }
 
