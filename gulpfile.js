@@ -3,6 +3,8 @@ const server = require('gulp-webserver');
 const sass = require('gulp-sass');
 const webpack = require('webpack-stream');
 const proxy = require('http-proxy-middleware');
+// 队列执行
+const gulpSequence = require("gulp-sequence");
 
 gulp.task('packjs', () => {
     return gulp.src('./src/scripts/**/*.js')
@@ -49,7 +51,7 @@ gulp.task('server', () => {
     return gulp.src('./dev')
         .pipe(server({
             host: 'localhost',
-            port: 9000,
+            port: 5000,
             livereture: true,
             middleware: [
                 proxy("/v7", {
@@ -110,6 +112,8 @@ gulp.task('watch', () => {
 })
 
 // default task
-gulp.task('default', ['packscss', 'packjs', 'copyhtml', 'copylibs', 'copyicons', 'server', 'watch', 'copyimages'], () => {
-    console.log('all works!')
+
+gulp.task('default', function(cb) {
+    gulpSequence(['packscss', 'packjs', 'copylibs', 'copyicons', 'copyhtml', 'watch', 'copyimages'], 'server')(cb)
+
 })

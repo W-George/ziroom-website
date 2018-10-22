@@ -1,4 +1,4 @@
-const getData = (query = '0,0') => {
+const getSuggestionData = (query = '0,0') => {
     return $.ajax({
         url: '/v7/setting/suggestion.json',
         data:{
@@ -12,5 +12,5 @@ const getData = (query = '0,0') => {
 }
 
 export default {
-    getData
+    getSuggestionData
 }
